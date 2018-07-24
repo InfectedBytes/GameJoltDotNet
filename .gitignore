@@ -1,0 +1,9 @@
+.vs/
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+packages/
+
+*.csproj.user
+*.DotSettings.user

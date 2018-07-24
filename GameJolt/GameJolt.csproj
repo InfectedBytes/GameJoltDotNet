@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>GameJoltDotNet</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Henrik Heine</Authors>
+    <Company>InfectedBytes</Company>
+    <Product>GameJoltDotNet</Product>
+    <Description>.NET library for the GameJolt API. This library let's you communicate with the GameJolt servers in order to provide several useful online features, like score boards, session handling and cloud storage.</Description>
+    <Copyright>Henrik Heine 2018</Copyright>
+    <PackageLicenseUrl />
+  </PropertyGroup>
+
+</Project>
