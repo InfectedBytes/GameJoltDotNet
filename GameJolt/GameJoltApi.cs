@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using GameJolt.Services;
 
 namespace GameJolt {
 	public class GameJoltApi {
@@ -23,9 +24,17 @@ namespace GameJolt {
 			set => http.Timeout = value;
 		}
 
+		public Time Time { get; }
+		public Users Users { get; }
+		public Sessions Sessions { get; }
+
 		public GameJoltApi(int gameId, string privateKey) {
 			this.gameId = gameId;
 			this.privateKey = privateKey;
+
+			Time = new Time(this);
+			Users = new Users(this);
+			Sessions = new Sessions(this);
 		}
 
 		private Response<string> ParseDump(string data) {

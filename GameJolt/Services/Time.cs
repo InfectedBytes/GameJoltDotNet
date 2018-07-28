@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
+using JetBrains.Annotations;
 
 namespace GameJolt.Services {
 	public class Time : Service {
@@ -136,8 +136,9 @@ namespace GameJolt.Services {
 			throw new ArgumentException($"Unknown timezone: {olsonTimeZoneId}");
 		}
 
-		public Time(GameJoltApi api) : base(api) { }
+		public Time([NotNull] GameJoltApi api) : base(api) { }
 
+		#region Task Api
 		public async Task<Response<DateTime>> GetAsync() {
 			var response = await Api.GetAsync("/time", null);
 			if(response.Success) {
@@ -149,10 +150,13 @@ namespace GameJolt.Services {
 			}
 			return Response.Failure<DateTime>(response.Message);
 		}
+		#endregion
 
-		public void Get(Action<Response<DateTime>> callback) {
-			Contract.Requires(callback != null);
+		#region Callback Api
+		public void Get([NotNull] Action<Response<DateTime>> callback) {
 			Wrap(GetAsync(), callback);
 		}
+		#endregion
+
 	}
 }
