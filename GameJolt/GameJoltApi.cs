@@ -29,6 +29,8 @@ namespace GameJolt {
 		public Sessions Sessions { get; }
 		public Scores Scores { get; }
 		public Trophies Trophies { get; }
+		public Friends Friends { get; }
+		public Datastore Datastore { get; }
 
 		public GameJoltApi(int gameId, string privateKey, int timeout = 10) {
 			this.gameId = gameId;
@@ -40,6 +42,8 @@ namespace GameJolt {
 			Sessions = new Sessions(this);
 			Scores = new Scores(this);
 			Trophies = new Trophies(this);
+			Friends = new Friends(this);
+			Datastore = new Datastore(this);
 		}
 
 		private Response<string> ParseDump(string data) {
