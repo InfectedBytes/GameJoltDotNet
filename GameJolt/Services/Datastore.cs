@@ -44,7 +44,7 @@ namespace GameJolt.Services {
 				: Response.Failure<string[]>(response.Message);
 		}
 
-		public async Task<Response> SetAsync(string key, string data, Credentials credentials) {
+		public async Task<Response> SetAsync(string key, string data, Credentials credentials = null) {
 			var parameters = new Dictionary<string, string>();
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);

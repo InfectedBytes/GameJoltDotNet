@@ -13,6 +13,7 @@ namespace GameJolt.UnitTests {
 		protected IReadOnlyCollection<Table> Tables { get; private set; }
 		protected int UniqueTable { get; private set; }
 		protected int NonUniqueTable { get; private set; }
+		protected IReadOnlyCollection<Trophy> Trophies { get; private set; }
 
 		[OneTimeSetUp]
 		public void Setup() {
@@ -26,8 +27,13 @@ namespace GameJolt.UnitTests {
 	""secondUser"" : [""<username>"", ""<token>""],
 	""uniqueTable"" : 0,
 	""nonUniqueTable"" : 0,
-	""tables"" : [0, 0]
-}");
+	""tables"" : [0, 0],
+	""trophies"" : [
+		{""id"":""0"",""difficulty"":""Bronze""},
+		{""id"":""0"",""difficulty"":""Silver""},
+	]
+}
+			");
 			}
 			var json = JSONNode.Parse(File.ReadAllText(file));
 			var id = json["gameId"].AsInt;
@@ -36,7 +42,8 @@ namespace GameJolt.UnitTests {
 			SecondCredentials = GetCredentials(json["secondUser"]);
 			UniqueTable = json["uniqueTable"].AsInt;
 			NonUniqueTable = json["nonUniqueTable"].AsInt;
-			Tables = json["tables"].ArraySelect(x => new Table(x)).ToArray();
+			Tables = json["tables"].ArraySelect(x => new Table(x));
+			Trophies = json["trophies"].ArraySelect(x => new Trophy(x));
 
 			Assert.That(id != 0, "Invalid game id");
 			Assert.That(!string.IsNullOrEmpty(key), "Invalid private key");
@@ -46,6 +53,7 @@ namespace GameJolt.UnitTests {
 			Assert.That(Tables.Count >= 2, "Table array must contain at least two table ids");
 			Assert.That(Tables.Any(t => t.Id == UniqueTable), "Table array does not contain the test table");
 			Assert.That(Tables.Any(t => t.Id == NonUniqueTable), "Table array does not contain the test table");
+			Assert.That(Trophies.Count >= 2, "Trophy array must contain at least two trophies");
 
 			Api = new GameJoltApi(id, key);
 		}
