@@ -57,12 +57,12 @@ namespace GameJolt.Services {
 		}
 
 		public async Task<Response> RemoveAsync(string key, Credentials credentials = null) {
-			var parameters = new Dictionary<string, string> {{"key", key}};
+			var parameters = new Dictionary<string, string>();
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);
 				parameters.Add("user_token", credentials.Token);
 			}
-			return await Api.GetAsync("/data-store/remove", parameters);
+			return await Api.PostDumpAsync("/data-store/remove", parameters, new Dictionary<string, string> {{"key", key}});
 		}
 
 		public async Task<Response<string>> UpdateAsync(string key, string data, DatastoreOperation operation,
