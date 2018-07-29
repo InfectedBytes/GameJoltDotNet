@@ -28,15 +28,18 @@ namespace GameJolt {
 		public Users Users { get; }
 		public Sessions Sessions { get; }
 		public Scores Scores { get; }
+		public Trophies Trophies { get; }
 
-		public GameJoltApi(int gameId, string privateKey) {
+		public GameJoltApi(int gameId, string privateKey, int timeout = 10) {
 			this.gameId = gameId;
 			this.privateKey = privateKey;
+			Timeout = TimeSpan.FromSeconds(timeout);
 
 			Time = new Time(this);
 			Users = new Users(this);
 			Sessions = new Sessions(this);
 			Scores = new Scores(this);
+			Trophies = new Trophies(this);
 		}
 
 		private Response<string> ParseDump(string data) {

@@ -60,6 +60,13 @@ namespace GameJolt.Services {
 			if(tableId != 0) parameters.Add("table_id", tableId.ToString());
 			return await Api.GetAsync("/scores/add", parameters);
 		}
+
+		public async Task<Response<int>> GetRankAsync(int value, int tableId = 0) {
+			var parameters = new Dictionary<string, string> {{"sort", value.ToString()}};
+			if(tableId != 0) parameters.Add("table_id", tableId.ToString());
+			var response = await Api.GetAsync("/scores/get-rank", parameters);
+			return response.Success ? Response.Create(response.Data["rank"].AsInt) : Response.Failure<int>(response.Message);
+		}
 		#endregion
 
 		#region Callback Api
@@ -78,6 +85,10 @@ namespace GameJolt.Services {
 		public void Add(string guestName, int value, string text, string extra = "",
 			int tableId = 0, Action<Response> callback = null) {
 			Wrap(AddAsync(guestName, value, text, extra, tableId), callback);
+		}
+
+		public void GetRank(Action<Response<int>> callback, int value, int tableId = 0) {
+			Wrap(GetRankAsync(value, tableId), callback);
 		}
 		#endregion
 	}
