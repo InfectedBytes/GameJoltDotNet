@@ -24,7 +24,7 @@
 			Id = data["id"].AsInt;
 			Name = data["name"].Value;
 			Description = data["description"].Value;
-			Primary = data["primary"].AsBool;
+			Primary = data["primary"].Value != "false" && data["primary"].Value != "0";
 		}
 	}
 }

@@ -22,7 +22,7 @@ namespace GameJolt.Services {
 			}
 			if(tableId != 0) parameters.Add("table_id", tableId.ToString());
 			if(betterThan != null) parameters.Add("better_than", betterThan.Value.ToString());
-			if(worseThan != null) parameters.Add("better_than", worseThan.Value.ToString());
+			if(worseThan != null) parameters.Add("worse_than", worseThan.Value.ToString());
 			var response = await Api.GetAsync("/scores", parameters);
 			return response.Success
 				? Response.Create(response.Data["scores"].ArraySelect(score => new Score(score)))
