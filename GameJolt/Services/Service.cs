@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using GameJolt.Services;
 
-namespace GameJolt {
+namespace GameJolt.Services {
 	public abstract class Service : IService {
 		protected GameJoltApi Api { get; }
 

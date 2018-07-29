@@ -27,6 +27,7 @@ namespace GameJolt {
 		public Time Time { get; }
 		public Users Users { get; }
 		public Sessions Sessions { get; }
+		public Scores Scores { get; }
 
 		public GameJoltApi(int gameId, string privateKey) {
 			this.gameId = gameId;
@@ -35,6 +36,7 @@ namespace GameJolt {
 			Time = new Time(this);
 			Users = new Users(this);
 			Sessions = new Sessions(this);
+			Scores = new Scores(this);
 		}
 
 		private Response<string> ParseDump(string data) {

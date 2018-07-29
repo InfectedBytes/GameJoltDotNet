@@ -10,11 +10,14 @@ namespace GameJolt.Services {
 		public Users([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
-		public async Task<Response> AuthAsync([NotNull] string name, [NotNull] string token) {
-			return await Api.GetAsync("/users/auth", new Dictionary<string, string> {
+		public async Task<Response<Credentials>> AuthAsync([NotNull] string name, [NotNull] string token) {
+			var response = await Api.GetAsync("/users/auth", new Dictionary<string, string> {
 				{"username", name},
 				{"user_token", token}
 			});
+			return response.Success
+				? Response.Create(new Credentials(name, token))
+				: Response.Failure<Credentials>(response.Message);
 		}
 
 		public async Task<Response<User>> FetchAsync([NotNull] string name) {
@@ -37,7 +40,7 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
-		public void Auth([NotNull] string name, [NotNull] string token, [NotNull] Action<Response> callback) {
+		public void Auth([NotNull] string name, [NotNull] string token, [NotNull] Action<Response<Credentials>> callback) {
 			Wrap(AuthAsync(name, token), callback);
 		}
 
