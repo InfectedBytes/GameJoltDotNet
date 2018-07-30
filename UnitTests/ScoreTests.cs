@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GameJolt.Objects;
+using GameJolt.Utils;
 using NUnit.Framework;
 
 namespace GameJolt.UnitTests {
@@ -16,6 +17,7 @@ namespace GameJolt.UnitTests {
 			await FillTable(NonUniqueTable);
 		}
 
+		[ExcludeFromCodeCoverage]
 		private async Task FillTable(int id) {
 			var result = await GetScoreValues(id, limit: 15);
 			var offset = result.FirstOrDefault() + 1;
@@ -137,6 +139,19 @@ namespace GameJolt.UnitTests {
 		}
 		#endregion
 
+		#region Rank
+		[Test]
+		public async Task GetRank() {
+			var scores = await GetScoreValues(NonUniqueTable);
+			var result = await Api.Scores.GetRankAsync(scores[0] + 1, NonUniqueTable);
+			Assert.That(result.Success);
+			Assert.That(result.Data == 1);
+			result = await Api.Scores.GetRankAsync((scores[0] + scores[1]) / 2, NonUniqueTable);
+			Assert.That(result.Success);
+			Assert.That(result.Data == 2);
+		}
+		#endregion
+
 		#region GetTables
 		[Test]
 		public async Task GetTables() {
@@ -178,6 +193,7 @@ namespace GameJolt.UnitTests {
 		/// <summary>
 		/// Comparer that only compares the id, name and primary attribute of a table.
 		/// </summary>
+		[ExcludeFromCodeCoverage]
 		private sealed class PartialTableComparer : IEqualityComparer<Table> {
 			public bool Equals(Table x, Table y) {
 				if(x == y) return true;
@@ -191,10 +207,11 @@ namespace GameJolt.UnitTests {
 				return obj.Id * obj.Name.GetHashCode() + obj.Primary.GetHashCode();
 			}
 		}
-		
+
 		/// <summary>
 		/// Comparer that only compares the timestamp, user id, value and name attributes.
 		/// </summary>
+		[ExcludeFromCodeCoverage]
 		private sealed class PartialScoreComparer : IEqualityComparer<Score> {
 			public bool Equals(Score x, Score y) {
 				if(x == y) return true;

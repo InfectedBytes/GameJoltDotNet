@@ -46,18 +46,22 @@ namespace GameJolt.Services
 		#endregion
 
 		#region Callback Api
+		[ExcludeFromCodeCoverage]
 		public void Open([NotNull] Credentials credentials, Action<Response> callback) {
 			Wrap(OpenAsync(credentials), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Ping([NotNull] Credentials credentials, bool active, Action<Response> callback) {
 			Wrap(PingAsync(credentials, active), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Check([NotNull] Credentials credentials, [NotNull] Action<Response> callback) {
 			Wrap(CheckAsync(credentials), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Close([NotNull] Credentials credentials, Action<Response> callback) {
 			Wrap(CloseAsync(credentials), callback);
 		}

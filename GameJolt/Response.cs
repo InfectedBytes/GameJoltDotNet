@@ -1,6 +1,8 @@
 ﻿using System;
+using GameJolt.Utils;
 
 namespace GameJolt {
+	[ExcludeFromCodeCoverage]
 	public class Response {
 		public bool Success { get; }
 		public string Message { get; }
@@ -45,6 +47,7 @@ namespace GameJolt {
 		#endregion
 	}
 
+	[ExcludeFromCodeCoverage]
 	public sealed class Response<T> : Response {
 		public T Data { get; }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using GameJolt.Objects;
 using GameJolt.Utils;
 using NUnit.Framework;
@@ -56,6 +57,12 @@ namespace GameJolt.UnitTests {
 			Assert.That(Trophies.Count >= 2, "Trophy array must contain at least two trophies");
 
 			Api = new GameJoltApi(id, key);
+		}
+
+		[TearDown]
+		public void PostTest() {
+			// too many requests in a too short time frame might be rejected by GameJolt
+			Thread.Sleep(100);
 		}
 
 		private Credentials GetCredentials(JSONNode data) {

@@ -74,23 +74,29 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
+		[ExcludeFromCodeCoverage]
 		public void Fetch(Action<Response<Score[]>> callback, Credentials credentials = null, int tableId = 0, int limit = 10) {
 			Wrap(FetchAsync(credentials, tableId, limit), callback);
 		}
+
+		[ExcludeFromCodeCoverage]
 		public void FetchTables([NotNull] Action<Response<Table[]>> callback) {
 			Wrap(FetchTablesAsync(), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Add([NotNull] Credentials credentials, int value, [NotNull] string text, string extra = "",
 			int tableId = 0, Action<Response> callback = null) {
 			Wrap(AddAsync(credentials, value, text, extra, tableId), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Add([NotNull] string guestName, int value, [NotNull] string text, string extra = "",
 			int tableId = 0, Action<Response> callback = null) {
 			Wrap(AddAsync(guestName, value, text, extra, tableId), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void GetRank(Action<Response<int>> callback, int value, int tableId = 0) {
 			Wrap(GetRankAsync(value, tableId), callback);
 		}

@@ -155,6 +155,7 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
+		[ExcludeFromCodeCoverage]
 		public void Get([NotNull] Action<Response<DateTime>> callback) {
 			callback.ThrowIfNull();
 			Wrap(GetAsync(), callback);

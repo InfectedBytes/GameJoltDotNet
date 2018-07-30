@@ -18,6 +18,7 @@ namespace GameJolt.Utils {
 		FloatValue = 7,
 	}
 
+	[ExcludeFromCodeCoverage]
 	public class JSONNode {
 		#region common interface
 		public virtual void Add(string aKey, JSONNode aItem) { }
@@ -295,6 +296,7 @@ namespace GameJolt.Utils {
 		}
 	} // End of JSONNode
 
+	[ExcludeFromCodeCoverage]
 	public class JSONArray : JSONNode, IEnumerable {
 		private List<JSONNode> m_List = new List<JSONNode>();
 		public override JSONNode this[int aIndex] {
@@ -364,6 +366,7 @@ namespace GameJolt.Utils {
 		}
 	} // End of JSONArray
 
+	[ExcludeFromCodeCoverage]
 	public class JSONClass : JSONNode, IEnumerable {
 		private Dictionary<string, JSONNode> m_Dict = new Dictionary<string, JSONNode>();
 		public override JSONNode this[string aKey] {
@@ -466,6 +469,7 @@ namespace GameJolt.Utils {
 		}
 	} // End of JSONClass
 
+	[ExcludeFromCodeCoverage]
 	public class JSONData : JSONNode {
 		private string m_Data;
 		public override string Value {
@@ -496,6 +500,7 @@ namespace GameJolt.Utils {
 		}
 	} // End of JSONData
 
+	[ExcludeFromCodeCoverage]
 	internal class JSONLazyCreator : JSONNode {
 		private JSONNode m_Node;
 		private string m_Key;
@@ -634,6 +639,7 @@ namespace GameJolt.Utils {
 		}
 	} // End of JSONLazyCreator
 
+	[ExcludeFromCodeCoverage]
 	public static class JSON {
 		public static JSONNode Parse(string aJSON) {
 			return JSONNode.Parse(aJSON);

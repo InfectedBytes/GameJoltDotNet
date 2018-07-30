@@ -87,22 +87,27 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
+		[ExcludeFromCodeCoverage]
 		public void Fetch(Action<Response<string>> callback, [NotNull] string key, Credentials credentials = null) {
 			Wrap(FetchAsync(key, credentials), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void GetKeys(Action<Response<string[]>> callback, Credentials credentials = null, string pattern = null) {
 			Wrap(GetKeysAsync(credentials, pattern), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Remove(Action<Response> callback, [NotNull] string key, Credentials credentials = null) {
 			Wrap(RemoveAsync(key, credentials), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Set(Action<Response> callback, [NotNull] string key, [NotNull] string data, Credentials credentials = null) {
 			Wrap(SetAsync(key, data, credentials), callback);
 		}
 
+		[ExcludeFromCodeCoverage]
 		public void Update(Action<Response<string>> callback, [NotNull] string key, [NotNull] string data, 
 			DatastoreOperation operation, Credentials credentials = null) {
 			Wrap(UpdateAsync(key, data, operation, credentials), callback);

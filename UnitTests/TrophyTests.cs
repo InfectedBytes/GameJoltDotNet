@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using GameJolt.Objects;
+using GameJolt.Utils;
 using NUnit.Framework;
 
 namespace GameJolt.UnitTests {
@@ -58,6 +59,7 @@ namespace GameJolt.UnitTests {
 		#endregion
 
 		#region Comparer
+		[ExcludeFromCodeCoverage]
 		private sealed class PartialTrophyComparer : IEqualityComparer<Trophy> {
 			public bool Equals(Trophy x, Trophy y) {
 				if(x == y) return true;
@@ -65,7 +67,7 @@ namespace GameJolt.UnitTests {
 				if(x.Id != y.Id) return false;
 				return x.Difficulty == y.Difficulty;
 			}
-
+			
 			public int GetHashCode(Trophy obj) {
 				return obj.Id * obj.Difficulty.GetHashCode();
 			}

@@ -12,6 +12,7 @@ namespace GameJolt.Services {
 			Api = api;
 		}
 
+		[ExcludeFromCodeCoverage]
 		protected void Wrap([NotNull] Task<Response> task, Action<Response> callback) {
 			if(callback == null) return;
 			task.ContinueWith(t => {
@@ -21,6 +22,7 @@ namespace GameJolt.Services {
 			});
 		}
 
+		[ExcludeFromCodeCoverage]
 		protected void Wrap<T>([NotNull] Task<Response<T>> task, Action<Response<T>> callback) {
 			if(callback == null) return;
 			task.ContinueWith(t => {
