@@ -17,17 +17,17 @@ namespace GameJolt.Services {
 			});
 			return response.Success
 				? Response.Create(new Credentials(name, token))
-				: Response.Failure<Credentials>(response.Message);
+				: Response.Failure<Credentials>(response);
 		}
 
 		public async Task<Response<User>> FetchAsync([NotNull] string name) {
 			var response = await Api.GetAsync("/users", new Dictionary<string, string> { { "username", name } });
-			return response.Success ? Response.Create(new User(response.Data["users"][0])) : Response.Failure<User>(response.Message);
+			return response.Success ? Response.Create(new User(response.Data["users"][0])) : Response.Failure<User>(response);
 		}
 
 		public async Task<Response<User>> FetchAsync(int id) {
 			var response = await Api.GetAsync("/users", new Dictionary<string, string> { { "user_id", id.ToString() } });
-			return response.Success ? Response.Create(new User(response.Data["users"][0])) : Response.Failure<User>(response.Message);
+			return response.Success ? Response.Create(new User(response.Data["users"][0])) : Response.Failure<User>(response);
 		}
 
 		public async Task<Response<User[]>> FetchAsync([NotNull] int[] ids) {
@@ -35,7 +35,7 @@ namespace GameJolt.Services {
 			var response = await Api.GetAsync("/users", new Dictionary<string, string> { { "user_id", idList } });
 			return response.Success
 				? Response.Create(response.Data["users"].Childs.Select(user => new User(user)).ToArray())
-				: Response.Failure<User[]>(response.Message);
+				: Response.Failure<User[]>(response);
 		}
 		#endregion
 

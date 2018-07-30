@@ -26,14 +26,14 @@ namespace GameJolt.Services {
 			var response = await Api.GetAsync("/scores", parameters);
 			return response.Success
 				? Response.Create(response.Data["scores"].ArraySelect(score => new Score(score)))
-				: Response.Failure<Score[]>(response.Message);
+				: Response.Failure<Score[]>(response);
 		}
 
 		public async Task<Response<Table[]>> FetchTablesAsync() {
 			var response = await Api.GetAsync("/scores/tables", null);
 			return response.Success 
 				? Response.Create(response.Data["tables"].ArraySelect(t => new Table(t))) 
-				: Response.Failure<Table[]>(response.Message);
+				: Response.Failure<Table[]>(response);
 		}
 
 		public async Task<Response> AddAsync([NotNull] Credentials credentials, int value, string text, string extra = "",
@@ -65,7 +65,7 @@ namespace GameJolt.Services {
 			var parameters = new Dictionary<string, string> {{"sort", value.ToString()}};
 			if(tableId != 0) parameters.Add("table_id", tableId.ToString());
 			var response = await Api.GetAsync("/scores/get-rank", parameters);
-			return response.Success ? Response.Create(response.Data["rank"].AsInt) : Response.Failure<int>(response.Message);
+			return response.Success ? Response.Create(response.Data["rank"].AsInt) : Response.Failure<int>(response);
 		}
 		#endregion
 

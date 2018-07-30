@@ -1,4 +1,5 @@
 ﻿using System;
+using GameJolt.Utils;
 
 namespace GameJolt.Objects {
 	/// <summary>

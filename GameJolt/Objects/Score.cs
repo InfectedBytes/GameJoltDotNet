@@ -1,4 +1,6 @@
-﻿namespace GameJolt.Objects {
+﻿using GameJolt.Utils;
+
+namespace GameJolt.Objects {
 	public sealed class Score {
 		/// <summary>
 		/// The score's numerical sort value, for e.g. 100

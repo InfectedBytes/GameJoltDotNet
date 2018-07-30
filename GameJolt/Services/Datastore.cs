@@ -41,7 +41,7 @@ namespace GameJolt.Services {
 			var response = await Api.GetAsync("/data-store/get-keys", parameters);
 			return response.Success
 				? Response.Create(response.Data["keys"].ArraySelect(key => key["key"].Value))
-				: Response.Failure<string[]>(response.Message);
+				: Response.Failure<string[]>(response);
 		}
 
 		public async Task<Response> SetAsync(string key, string data, Credentials credentials = null) {

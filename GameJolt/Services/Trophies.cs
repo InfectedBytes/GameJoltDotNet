@@ -23,7 +23,7 @@ namespace GameJolt.Services {
 			var response = await Api.GetAsync("/trophies", parameters);
 			return response.Success
 				? Response.Create(response.Data["trophies"].ArraySelect(trophy => new Trophy(trophy)))
-				: Response.Failure<Trophy[]>(response.Message);
+				: Response.Failure<Trophy[]>(response);
 		}
 
 		public async Task<Response> SetAchievedAsync([NotNull] Credentials credentials, int id) {

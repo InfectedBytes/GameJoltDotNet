@@ -16,7 +16,7 @@ namespace GameJolt.Services {
 			});
 			return response.Success
 				? Response.Create(response.Data["friends"].ArraySelect(friend => friend["friend_id"].AsInt))
-				: Response.Failure<int[]>(response.Message);
+				: Response.Failure<int[]>(response);
 		}
 		#endregion
 

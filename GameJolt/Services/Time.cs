@@ -148,7 +148,7 @@ namespace GameJolt.Services {
 				var zone = GetTimeZone(response.Data["timezone"].Value);
 				return Response.Create(TimeZoneInfo.ConvertTime(date, zone, TimeZoneInfo.Local));
 			}
-			return Response.Failure<DateTime>(response.Message);
+			return Response.Failure<DateTime>(response);
 		}
 		#endregion
 

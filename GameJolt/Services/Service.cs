@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 
 namespace GameJolt.Services {
-	public abstract class Service : IService {
+	public abstract class Service {
 		protected GameJoltApi Api { get; }
 
 		protected Service(GameJoltApi api) {
@@ -13,7 +13,6 @@ namespace GameJolt.Services {
 			if(callback == null) return;
 			task.ContinueWith(t => {
 				if(t.IsCanceled) callback(Response.Failure(new TimeoutException()));
-				// ReSharper disable once PossibleNullReferenceException
 				else if(t.IsFaulted) callback(Response.Failure(t.Exception.InnerException));
 				else callback(t.Result);
 			});
@@ -23,7 +22,6 @@ namespace GameJolt.Services {
 			if(callback == null) return;
 			task.ContinueWith(t => {
 				if(t.IsCanceled) callback(Response.Failure<T>(new TimeoutException()));
-				// ReSharper disable once PossibleNullReferenceException
 				else if(t.IsFaulted) callback(Response.Failure<T>(t.Exception.InnerException));
 				else callback(t.Result);
 			});

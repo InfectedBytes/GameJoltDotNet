@@ -7,11 +7,14 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using GameJolt.Services;
+using GameJolt.Utils;
 
 [assembly:InternalsVisibleTo("GameJolt.UnitTests")]
 
 namespace GameJolt {
 	public class GameJoltApi {
+		public enum ResponseFormat {Json, Dump}
+
 		public const string ApiProtocol = "https://";
 		public const string ApiRoot = "api.gamejolt.com/api/game/";
 		public const string ApiVersion = "1_2";

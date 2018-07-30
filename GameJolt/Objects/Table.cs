@@ -1,4 +1,6 @@
-﻿namespace GameJolt.Objects {
+﻿using GameJolt.Utils;
+
+namespace GameJolt.Objects {
 	public sealed class Table {
 		/// <summary>
 		/// The Id of the score table. 

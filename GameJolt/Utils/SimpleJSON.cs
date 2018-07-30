@@ -7,7 +7,7 @@ using System.Linq;
 
 // ReSharper disable All
 
-namespace GameJolt {
+namespace GameJolt.Utils {
 	public enum JSONBinaryTag {
 		Array = 1,
 		Class = 2,

@@ -6,45 +6,50 @@ namespace GameJolt {
 		public string Message { get; }
 		public Exception Exception { get; }
 
-		protected Response(bool success, string message) {
+		protected Response(bool success, string message, Exception exception) {
 			Success = success;
 			Message = message;
-		}
-
-		protected Response(Exception exception) {
-			Success = false;
-			Message = exception.Message;
 			Exception = exception;
 		}
 
+		#region Response
 		public static Response Failure(string message) {
-			return new Response(false, message);
+			return new Response(false, message, null);
 		}
 
 		public static Response Failure(Exception exception) {
-			return new Response(exception);
+			return new Response(false, exception.Message, exception);
 		}
 
+		public static Response Failure(Response response) {
+			return new Response(response.Success, response.Message, response.Exception);
+		}
+		#endregion
+
+		#region Response<T>
 		public static Response<T> Failure<T>(string message) {
-			return new Response<T>(false, message, default(T));
+			return new Response<T>(false, message, null, default(T));
 		}
 
 		public static Response<T> Failure<T>(Exception exception) {
-			return new Response<T>(exception);
+			return new Response<T>(false, exception.Message, exception, default(T));
+		}
+
+		public static Response<T> Failure<T>(Response response) {
+			return new Response<T>(false, response.Message, response.Exception, default(T));
 		}
 
 		public static Response<T> Create<T>(T data) {
-			return new Response<T>(true, null, data);
+			return new Response<T>(true, null, null, data);
 		}
+		#endregion
 	}
 
 	public sealed class Response<T> : Response {
 		public T Data { get; }
 
-		internal Response(bool success, string message, T data) : base(success, message) {
+		internal Response(bool success, string message, Exception exception, T data) : base(success, message, exception) {
 			Data = data;
 		}
-
-		internal Response(Exception exception) : base(exception) { }
 	}
 }
