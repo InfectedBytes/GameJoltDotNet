@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GameJolt.Services;
 using GameJolt.Utils;
+using JetBrains.Annotations;
 
 [assembly:InternalsVisibleTo("GameJolt.UnitTests")]
 
@@ -30,15 +31,16 @@ namespace GameJolt {
 			set => http.Timeout = value;
 		}
 
-		public Time Time { get; }
-		public Users Users { get; }
-		public Sessions Sessions { get; }
-		public Scores Scores { get; }
-		public Trophies Trophies { get; }
-		public Friends Friends { get; }
-		public Datastore Datastore { get; }
+		[NotNull] public Time Time { get; }
+		[NotNull] public Users Users { get; }
+		[NotNull] public Sessions Sessions { get; }
+		[NotNull] public Scores Scores { get; }
+		[NotNull] public Trophies Trophies { get; }
+		[NotNull] public Friends Friends { get; }
+		[NotNull] public Datastore Datastore { get; }
 
-		public GameJoltApi(int gameId, string privateKey, int timeout = 10) {
+		public GameJoltApi(int gameId, [NotNull] string privateKey, int timeout = 10) {
+			privateKey.ThrowIfNullOrEmpty();
 			this.gameId = gameId;
 			this.privateKey = privateKey;
 			Timeout = TimeSpan.FromSeconds(timeout);
@@ -64,28 +66,32 @@ namespace GameJolt {
 			return success ? Response.Create(json) : Response.Failure<JSONNode>(json["message"].Value);
 		}
 
-		public async Task<Response<JSONNode>> GetAsync(string method, IDictionary<string, string> parameters) {
+		public async Task<Response<JSONNode>> GetAsync([NotNull] string method, IDictionary<string, string> parameters) {
+			method.ThrowIfNullOrEmpty();
 			var response = await http.GetAsync(GetRequestUrl(method, parameters, null, ResponseFormat.Json));
 			var data = await response.Content.ReadAsStringAsync();
 			return ParseJson(data);
 		}
 
-		public async Task<Response<string>> GetDumpAsync(string method, IDictionary<string, string> parameters) {
+		public async Task<Response<string>> GetDumpAsync([NotNull] string method, IDictionary<string, string> parameters) {
+			method.ThrowIfNullOrEmpty();
 			var response = await http.GetAsync(GetRequestUrl(method, parameters, null, ResponseFormat.Dump));
 			var data = await response.Content.ReadAsStringAsync();
 			return ParseDump(data);
 		}
 
-		public async Task<Response<JSONNode>> PostAsync(string method, IDictionary<string, string> parameters,
+		public async Task<Response<JSONNode>> PostAsync([NotNull] string method, IDictionary<string, string> parameters,
 			IDictionary<string, string> payload) {
+			method.ThrowIfNullOrEmpty();
 			var response = await http.PostAsync(GetRequestUrl(method, parameters, payload, ResponseFormat.Json),
 				new FormUrlEncodedContent(payload ?? Enumerable.Empty<KeyValuePair<string, string>>()));
 			var data = await response.Content.ReadAsStringAsync();
 			return ParseJson(data);
 		}
 
-		public async Task<Response<string>> PostDumpAsync(string method, IDictionary<string, string> parameters,
+		public async Task<Response<string>> PostDumpAsync([NotNull] string method, IDictionary<string, string> parameters,
 			IDictionary<string, string> payload) {
+			method.ThrowIfNullOrEmpty();
 			var response = await http.PostAsync(GetRequestUrl(method, parameters, payload, ResponseFormat.Dump),
 				new FormUrlEncodedContent(payload ?? Enumerable.Empty<KeyValuePair<string, string>>()));
 			var data = await response.Content.ReadAsStringAsync();

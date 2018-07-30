@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Threading.Tasks;
+using GameJolt.Utils;
+using JetBrains.Annotations;
 
 namespace GameJolt.Services {
 	public abstract class Service {
-		protected GameJoltApi Api { get; }
+		[NotNull] protected GameJoltApi Api { get; }
 
-		protected Service(GameJoltApi api) {
+		protected Service([NotNull] GameJoltApi api) {
+			api.ThrowIfNull();
 			Api = api;
 		}
 
-		protected void Wrap(Task<Response> task, Action<Response> callback) {
+		protected void Wrap([NotNull] Task<Response> task, Action<Response> callback) {
 			if(callback == null) return;
 			task.ContinueWith(t => {
 				if(t.IsCanceled) callback(Response.Failure(new TimeoutException()));
@@ -18,7 +21,7 @@ namespace GameJolt.Services {
 			});
 		}
 
-		protected void Wrap<T>(Task<Response<T>> task, Action<Response<T>> callback) {
+		protected void Wrap<T>([NotNull] Task<Response<T>> task, Action<Response<T>> callback) {
 			if(callback == null) return;
 			task.ContinueWith(t => {
 				if(t.IsCanceled) callback(Response.Failure<T>(new TimeoutException()));

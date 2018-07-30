@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GameJolt.Objects;
+using GameJolt.Utils;
 using JetBrains.Annotations;
 
 namespace GameJolt.Services {
@@ -11,6 +12,8 @@ namespace GameJolt.Services {
 
 		#region Task Api
 		public async Task<Response<Credentials>> AuthAsync([NotNull] string name, [NotNull] string token) {
+			name.ThrowIfNullOrEmpty();
+			token.ThrowIfNullOrEmpty();
 			var response = await Api.GetAsync("/users/auth", new Dictionary<string, string> {
 				{"username", name},
 				{"user_token", token}
@@ -21,6 +24,7 @@ namespace GameJolt.Services {
 		}
 
 		public async Task<Response<User>> FetchAsync([NotNull] string name) {
+			name.ThrowIfNullOrEmpty();
 			var response = await Api.GetAsync("/users", new Dictionary<string, string> { { "username", name } });
 			return response.Success ? Response.Create(new User(response.Data["users"][0])) : Response.Failure<User>(response);
 		}
@@ -31,6 +35,7 @@ namespace GameJolt.Services {
 		}
 
 		public async Task<Response<User[]>> FetchAsync([NotNull] int[] ids) {
+			ids.ThrowIfNullOrEmpty();
 			var idList = string.Join(",", ids);
 			var response = await Api.GetAsync("/users", new Dictionary<string, string> { { "user_id", idList } });
 			return response.Success

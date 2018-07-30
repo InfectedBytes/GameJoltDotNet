@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using GameJolt.Objects;
 using GameJolt.Utils;
+using JetBrains.Annotations;
 
 namespace GameJolt.Services {
 	/// <summary>
@@ -18,10 +19,11 @@ namespace GameJolt.Services {
 	}
 
 	public sealed class Datastore : Service {
-		public Datastore(GameJoltApi api) : base(api) { }
+		public Datastore([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
-		public async Task<Response<string>> FetchAsync(string key, Credentials credentials = null) {
+		public async Task<Response<string>> FetchAsync([NotNull] string key, Credentials credentials = null) {
+			key.ThrowIfNullOrEmpty();
 			var parameters = new Dictionary<string, string>();
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);
@@ -44,7 +46,9 @@ namespace GameJolt.Services {
 				: Response.Failure<string[]>(response);
 		}
 
-		public async Task<Response> SetAsync(string key, string data, Credentials credentials = null) {
+		public async Task<Response> SetAsync([NotNull] string key, [NotNull] string data, Credentials credentials = null) {
+			key.ThrowIfNullOrEmpty();
+			data.ThrowIfNull();
 			var parameters = new Dictionary<string, string>();
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);
@@ -56,7 +60,8 @@ namespace GameJolt.Services {
 			});
 		}
 
-		public async Task<Response> RemoveAsync(string key, Credentials credentials = null) {
+		public async Task<Response> RemoveAsync([NotNull] string key, Credentials credentials = null) {
+			key.ThrowIfNullOrEmpty();
 			var parameters = new Dictionary<string, string>();
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);
@@ -65,8 +70,10 @@ namespace GameJolt.Services {
 			return await Api.PostDumpAsync("/data-store/remove", parameters, new Dictionary<string, string> {{"key", key}});
 		}
 
-		public async Task<Response<string>> UpdateAsync(string key, string data, DatastoreOperation operation,
-			Credentials credentials = null) {
+		public async Task<Response<string>> UpdateAsync([NotNull] string key, [NotNull] string data, 
+			DatastoreOperation operation, Credentials credentials = null) {
+			key.ThrowIfNullOrEmpty();
+			data.ThrowIfNull();
 			var parameters = new Dictionary<string, string> {{"operation", operation.ToString().ToLower()}};
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);
@@ -80,7 +87,7 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
-		public void Fetch(Action<Response<string>> callback, string key, Credentials credentials = null) {
+		public void Fetch(Action<Response<string>> callback, [NotNull] string key, Credentials credentials = null) {
 			Wrap(FetchAsync(key, credentials), callback);
 		}
 
@@ -88,16 +95,16 @@ namespace GameJolt.Services {
 			Wrap(GetKeysAsync(credentials, pattern), callback);
 		}
 
-		public void Remove(Action<Response> callback, string key, Credentials credentials = null) {
+		public void Remove(Action<Response> callback, [NotNull] string key, Credentials credentials = null) {
 			Wrap(RemoveAsync(key, credentials), callback);
 		}
 
-		public void Set(Action<Response> callback, string key, string data, Credentials credentials = null) {
+		public void Set(Action<Response> callback, [NotNull] string key, [NotNull] string data, Credentials credentials = null) {
 			Wrap(SetAsync(key, data, credentials), callback);
 		}
 
-		public void Update(Action<Response<string>> callback, string key, string data, DatastoreOperation operation,
-			Credentials credentials = null) {
+		public void Update(Action<Response<string>> callback, [NotNull] string key, [NotNull] string data, 
+			DatastoreOperation operation, Credentials credentials = null) {
 			Wrap(UpdateAsync(key, data, operation, credentials), callback);
 		}
 		#endregion

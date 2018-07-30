@@ -7,11 +7,12 @@ using JetBrains.Annotations;
 
 namespace GameJolt.Services {
 	public sealed class Trophies : Service {
-		public Trophies(GameJoltApi api) : base(api) { }
+		public Trophies([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		public async Task<Response<Trophy[]>> FetchAsync([NotNull] Credentials credentials, 
 			bool? achieved = null, int[] ids = null) {
+			credentials.ThrowIfNull();
 			var parameters = new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token}
@@ -27,6 +28,7 @@ namespace GameJolt.Services {
 		}
 
 		public async Task<Response> SetAchievedAsync([NotNull] Credentials credentials, int id) {
+			credentials.ThrowIfNull();
 			return await Api.GetAsync("/trophies/add-achieved", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token},
@@ -35,6 +37,7 @@ namespace GameJolt.Services {
 		}
 
 		public async Task<Response> RemoveAchievedAsync([NotNull] Credentials credentials, int id) {
+			credentials.ThrowIfNull();
 			return await Api.GetAsync("/trophies/remove-achieved", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token},

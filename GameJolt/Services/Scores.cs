@@ -7,7 +7,7 @@ using JetBrains.Annotations;
 
 namespace GameJolt.Services {
 	public sealed class Scores : Service {
-		public Scores(GameJoltApi api) : base(api) { }
+		public Scores([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		public async Task<Response<Score[]>> FetchAsync(Credentials credentials = null, int tableId = 0, int limit = 10,
@@ -36,8 +36,10 @@ namespace GameJolt.Services {
 				: Response.Failure<Table[]>(response);
 		}
 
-		public async Task<Response> AddAsync([NotNull] Credentials credentials, int value, string text, string extra = "",
-			int tableId = 0) {
+		public async Task<Response> AddAsync([NotNull] Credentials credentials, int value, [NotNull] string text, 
+			string extra = "", int tableId = 0) {
+			credentials.ThrowIfNull();
+			text.ThrowIfNullOrEmpty();
 			var parameters = new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token},
@@ -49,8 +51,10 @@ namespace GameJolt.Services {
 			return await Api.GetAsync("/scores/add", parameters);
 		}
 
-		public async Task<Response> AddAsync([NotNull] string guestName, int value, string text, string extra = "",
-			int tableId = 0) {
+		public async Task<Response> AddAsync([NotNull] string guestName, int value, [NotNull] string text, 
+			string extra = "", int tableId = 0) {
+			guestName.ThrowIfNullOrEmpty();
+			text.ThrowIfNullOrEmpty();
 			var parameters = new Dictionary<string, string> {
 				{"guest", guestName},
 				{"sort", value.ToString()},
@@ -77,12 +81,12 @@ namespace GameJolt.Services {
 			Wrap(FetchTablesAsync(), callback);
 		}
 
-		public void Add(Credentials credentials, int value, string text, string extra = "",
+		public void Add([NotNull] Credentials credentials, int value, [NotNull] string text, string extra = "",
 			int tableId = 0, Action<Response> callback = null) {
 			Wrap(AddAsync(credentials, value, text, extra, tableId), callback);
 		}
 
-		public void Add(string guestName, int value, string text, string extra = "",
+		public void Add([NotNull] string guestName, int value, [NotNull] string text, string extra = "",
 			int tableId = 0, Action<Response> callback = null) {
 			Wrap(AddAsync(guestName, value, text, extra, tableId), callback);
 		}

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using GameJolt.Utils;
 using JetBrains.Annotations;
 
 namespace GameJolt.Services {
@@ -130,7 +131,8 @@ namespace GameJolt.Services {
 			{"Pacific/Tongatapu", "Tonga Standard Time"}
 		};
 
-		public static TimeZoneInfo GetTimeZone(string olsonTimeZoneId) {
+		public static TimeZoneInfo GetTimeZone([NotNull] string olsonTimeZoneId) {
+			olsonTimeZoneId.ThrowIfNullOrEmpty();
 			if(Timezones.TryGetValue(olsonTimeZoneId, out var id))
 				return TimeZoneInfo.FindSystemTimeZoneById(id);
 			throw new ArgumentException($"Unknown timezone: {olsonTimeZoneId}");
@@ -154,6 +156,7 @@ namespace GameJolt.Services {
 
 		#region Callback Api
 		public void Get([NotNull] Action<Response<DateTime>> callback) {
+			callback.ThrowIfNull();
 			Wrap(GetAsync(), callback);
 		}
 		#endregion

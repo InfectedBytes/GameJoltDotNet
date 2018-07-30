@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using GameJolt.Objects;
+using GameJolt.Utils;
 using JetBrains.Annotations;
 
 namespace GameJolt.Services
@@ -11,6 +12,7 @@ namespace GameJolt.Services
 
 		#region Task Api
 		public async Task<Response> OpenAsync([NotNull] Credentials credentials) {
+			credentials.ThrowIfNull();
 			return await Api.GetAsync("/sessions/open", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token}
@@ -18,6 +20,7 @@ namespace GameJolt.Services
 		}
 
 		public async Task<Response> PingAsync([NotNull] Credentials credentials, bool active) {
+			credentials.ThrowIfNull();
 			return await Api.GetAsync("/sessions/ping", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token},
@@ -26,6 +29,7 @@ namespace GameJolt.Services
 		}
 
 		public async Task<Response> CheckAsync([NotNull] Credentials credentials) {
+			credentials.ThrowIfNull();
 			return await Api.GetAsync("/sessions/check", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token}
@@ -33,6 +37,7 @@ namespace GameJolt.Services
 		}
 
 		public async Task<Response> CloseAsync([NotNull] Credentials credentials) {
+			credentials.ThrowIfNull();
 			return await Api.GetAsync("/sessions/close", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token}

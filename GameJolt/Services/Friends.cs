@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using GameJolt.Objects;
 using GameJolt.Utils;
+using JetBrains.Annotations;
 
 namespace GameJolt.Services {
 	public sealed class Friends : Service {
-		public Friends(GameJoltApi api) : base(api) { }
+		public Friends([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
-		public async Task<Response<int[]>> FetchAsync(Credentials credentials) {
+		public async Task<Response<int[]>> FetchAsync([NotNull] Credentials credentials) {
+			credentials.ThrowIfNull();
 			var response = await Api.GetAsync("/friends", new Dictionary<string, string> {
 				{"username", credentials.Name},
 				{"user_token", credentials.Token}
@@ -21,7 +23,7 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
-		public void Fetch(Credentials credentials, Action<Response<int[]>> callback) {
+		public void Fetch([NotNull] Credentials credentials, Action<Response<int[]>> callback) {
 			Wrap(FetchAsync(credentials), callback);
 		}
 		#endregion
