@@ -24,7 +24,8 @@ namespace GameJolt.Services {
 
 		#region Callback Api
 		[ExcludeFromCodeCoverage]
-		public void Fetch([NotNull] Credentials credentials, Action<Response<int[]>> callback) {
+		public void Fetch([NotNull] Credentials credentials, [NotNull] Action<Response<int[]>> callback) {
+			callback.ThrowIfNull();
 			Wrap(FetchAsync(credentials), callback);
 		}
 		#endregion

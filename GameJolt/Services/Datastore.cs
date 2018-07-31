@@ -88,28 +88,30 @@ namespace GameJolt.Services {
 
 		#region Callback Api
 		[ExcludeFromCodeCoverage]
-		public void Fetch(Action<Response<string>> callback, [NotNull] string key, Credentials credentials = null) {
+		public void Fetch([NotNull] string key, Credentials credentials = null, Action<Response<string>> callback = null) {
 			Wrap(FetchAsync(key, credentials), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
-		public void GetKeys(Action<Response<string[]>> callback, Credentials credentials = null, string pattern = null) {
+		public void GetKeys(Credentials credentials = null, string pattern = null,
+			Action<Response<string[]>> callback = null) {
 			Wrap(GetKeysAsync(credentials, pattern), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
-		public void Remove(Action<Response> callback, [NotNull] string key, Credentials credentials = null) {
+		public void Remove([NotNull] string key, Credentials credentials = null, Action<Response> callback = null) {
 			Wrap(RemoveAsync(key, credentials), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
-		public void Set(Action<Response> callback, [NotNull] string key, [NotNull] string data, Credentials credentials = null) {
+		public void Set([NotNull] string key, [NotNull] string data, Credentials credentials = null,
+			Action<Response> callback = null) {
 			Wrap(SetAsync(key, data, credentials), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
-		public void Update(Action<Response<string>> callback, [NotNull] string key, [NotNull] string data, 
-			DatastoreOperation operation, Credentials credentials = null) {
+		public void Update([NotNull] string key, [NotNull] string data,
+			DatastoreOperation operation, Credentials credentials = null, Action<Response<string>> callback = null) {
 			Wrap(UpdateAsync(key, data, operation, credentials), callback);
 		}
 		#endregion

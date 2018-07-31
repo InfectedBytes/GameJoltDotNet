@@ -47,21 +47,25 @@ namespace GameJolt.Services {
 		#region Callback Api
 		[ExcludeFromCodeCoverage]
 		public void Auth([NotNull] string name, [NotNull] string token, [NotNull] Action<Response<Credentials>> callback) {
+			callback.ThrowIfNull();
 			Wrap(AuthAsync(name, token), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
 		public void Fetch([NotNull] string name, [NotNull] Action<Response<User>> callback) {
+			callback.ThrowIfNull();
 			Wrap(FetchAsync(name), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
 		public void Fetch(int id, [NotNull] Action<Response<User>> callback) {
+			callback.ThrowIfNull();
 			Wrap(FetchAsync(id), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
 		public void Fetch([NotNull] int[] ids, [NotNull] Action<Response<User[]>> callback) {
+			callback.ThrowIfNull();
 			Wrap(FetchAsync(ids), callback);
 		}
 		#endregion

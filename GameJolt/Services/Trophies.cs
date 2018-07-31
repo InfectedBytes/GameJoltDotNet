@@ -48,18 +48,18 @@ namespace GameJolt.Services {
 
 		#region Callback Api
 		[ExcludeFromCodeCoverage]
-		public void Fetch([NotNull] Action<Response<Trophy[]>> callback, [NotNull]  Credentials credentials, 
-			bool? achieved = null, int[] ids = null) {
+		public void Fetch([NotNull] Credentials credentials, bool? achieved = null, int[] ids = null,
+			Action<Response<Trophy[]>> callback = null) {
 			Wrap(FetchAsync(credentials, achieved, ids), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
-		public void SetAchieved([NotNull] Credentials credentials, int id, Action<Response> callback) {
+		public void SetAchieved([NotNull] Credentials credentials, int id, Action<Response> callback = null) {
 			Wrap(SetAchievedAsync(credentials, id), callback);
 		}
 
 		[ExcludeFromCodeCoverage]
-		public void RemoveAchieved([NotNull] Credentials credentials, int id, Action<Response> callback) {
+		public void RemoveAchieved([NotNull] Credentials credentials, int id, Action<Response> callback = null) {
 			Wrap(RemoveAchievedAsync(credentials, id), callback);
 		}
 		#endregion
