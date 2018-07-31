@@ -1,6 +1,9 @@
 ﻿using GameJolt.Utils;
 
 namespace GameJolt.Objects {
+	/// <summary>
+	/// Defines a single scoreboard entry.
+	/// </summary>
 	public sealed class Score {
 		/// <summary>
 		/// The score's numerical sort value, for e.g. 100
@@ -53,7 +56,7 @@ namespace GameJolt.Objects {
 		/// </summary>
 		public int StoredTimestamp { get; }
 
-		public Score(JSONNode data) {
+		internal Score(JSONNode data) {
 			Value = data["sort"].AsInt;
 			Text = data["score"].Value;
 			Extra = data["extra_data"].Value;

@@ -22,6 +22,9 @@ namespace GameJolt.Objects {
 		Banned
 	}
 
+	/// <summary>
+	/// Provides all informations on a certain user.
+	/// </summary>
 	public sealed class User {
 		/// <summary>
 		/// The ID of the user. 

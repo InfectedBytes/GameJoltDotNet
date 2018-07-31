@@ -5,6 +5,9 @@ using GameJolt.Utils;
 using JetBrains.Annotations;
 
 namespace GameJolt.Services {
+	/// <summary>
+	/// A namespace to obtain time information from the Game Jolt server.
+	/// </summary>
 	public class Time : Service {
 		private static readonly Dictionary<string, string> Timezones = new Dictionary<string, string> {
 			{"Africa/Bangui", "W. Central Africa Standard Time"},
@@ -131,6 +134,12 @@ namespace GameJolt.Services {
 			{"Pacific/Tongatapu", "Tonga Standard Time"}
 		};
 
+		/// <summary>
+		/// Helper function which converts an Olson timezone (tz-database) to a .NET timezone.
+		/// For example "America/New_York" is translated to "Eastern Standard Time"
+		/// </summary>
+		/// <param name="olsonTimeZoneId">Olson timezone, for e.g. "America/New_York"</param>
+		/// <returns></returns>
 		public static TimeZoneInfo GetTimeZone([NotNull] string olsonTimeZoneId) {
 			olsonTimeZoneId.ThrowIfNullOrEmpty();
 			if(Timezones.TryGetValue(olsonTimeZoneId, out var id))
@@ -141,6 +150,10 @@ namespace GameJolt.Services {
 		public Time([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
+		/// <summary>
+		/// Returns the time of the Game Jolt server.
+		/// </summary>
+		/// <returns></returns>
 		public async Task<Response<DateTime>> GetAsync() {
 			var response = await Api.GetAsync("/time", null);
 			if(response.Success) {
@@ -155,6 +168,11 @@ namespace GameJolt.Services {
 		#endregion
 
 		#region Callback Api
+		/// <summary>
+		/// Returns the time of the Game Jolt server.
+		/// </summary>
+		/// <param name="callback">Action that is called on completion or error.</param>
+		/// <returns></returns>
 		[ExcludeFromCodeCoverage]
 		public void Get([NotNull] Action<Response<DateTime>> callback) {
 			callback.ThrowIfNull();

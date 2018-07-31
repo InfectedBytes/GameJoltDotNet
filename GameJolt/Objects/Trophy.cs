@@ -10,6 +10,9 @@ namespace GameJolt.Objects {
 		Platinum
 	}
 
+	/// <summary>
+	/// Provides the information a trophy.
+	/// </summary>
 	public sealed class Trophy {
 		/// <summary>
 		/// The ID of the trophy. 
@@ -41,7 +44,13 @@ namespace GameJolt.Objects {
 		/// </summary>
 		public bool Achieved { get; }
 
-		public Trophy(JSONNode data) {
+		/// <summary>
+		/// If the user has not yet achieved this trophy, this property determines whether this trophy 
+		/// is tagged as a secret trophy. If the user already achieved this trophy, this property returns false.
+		/// </summary>
+		public bool IsSecret => string.IsNullOrEmpty(Description) && ImageUrl == "https://s.gjcdn.net/img/trophy-secret-1.jpg";
+
+		internal Trophy(JSONNode data) {
 			Id = data["id"].AsInt;
 			Title = data["title"].Value;
 			Description = data["description"].Value;

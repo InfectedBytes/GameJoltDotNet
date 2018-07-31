@@ -1,6 +1,9 @@
 ﻿using GameJolt.Utils;
 
 namespace GameJolt.Objects {
+	/// <summary>
+	/// Defines a scoreboard table.
+	/// </summary>
 	public sealed class Table {
 		/// <summary>
 		/// The Id of the score table. 
