@@ -3,13 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>GameJoltDotNet</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.1.0</Version>
     <Authors>Henrik Heine</Authors>
     <Company>InfectedBytes</Company>
     <Product>GameJoltDotNet</Product>
     <Description>.NET library for the GameJolt API. This library let's you communicate with the GameJolt servers in order to provide several useful online features, like score boards, session handling and cloud storage.</Description>
     <Copyright>Henrik Heine 2018</Copyright>
-    <PackageLicenseUrl />
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/InfectedBytes/GameJoltDotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/InfectedBytes/GameJoltDotNet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
