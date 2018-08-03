@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>GameJoltDotNet</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Henrik Heine</Authors>
     <Company>InfectedBytes</Company>
     <Product>GameJoltDotNet</Product>
@@ -17,6 +17,7 @@
     <FileVersion>0.1.1.0</FileVersion>
     <PackageTags>gamejolt, network, cloud, scoreboard, scores, authentication</PackageTags>
     <PackageReleaseNotes>first prerelease</PackageReleaseNotes>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
