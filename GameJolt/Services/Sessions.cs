@@ -11,7 +11,7 @@ namespace GameJolt.Services {
 	/// and what state they are in while playing (active or idle).
 	/// </summary>
 	public sealed class Sessions : Service {
-		public Sessions([NotNull] GameJoltApi api) : base(api) { }
+		internal Sessions([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

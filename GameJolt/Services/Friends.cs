@@ -10,7 +10,7 @@ namespace GameJolt.Services {
 	/// A namespace to get information about users friends on Game Jolt.
 	/// </summary>
 	public sealed class Friends : Service {
-		public Friends([NotNull] GameJoltApi api) : base(api) { }
+		internal Friends([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

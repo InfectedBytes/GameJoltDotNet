@@ -12,7 +12,7 @@ namespace GameJolt.Services {
 	/// Instead, users have a token to verify themselves along with their username.
 	/// </summary>
 	public sealed class Users : Service {
-		public Users([NotNull] GameJoltApi api) : base(api) { }
+		internal Users([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

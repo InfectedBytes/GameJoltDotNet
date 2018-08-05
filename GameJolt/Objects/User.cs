@@ -6,10 +6,25 @@ namespace GameJolt.Objects {
 	/// User types.
 	/// </summary>
 	public enum UserType {
+		/// <summary>
+		/// The type of the user could not be determined.
+		/// </summary>
 		Undefined,
+		/// <summary>
+		/// The user is a normal user (consumer).
+		/// </summary>
 		User,
+		/// <summary>
+		/// The user is a developer.
+		/// </summary>
 		Developer,
+		/// <summary>
+		/// The user is a GameJolt moderator.
+		/// </summary>
 		Moderator,
+		/// <summary>
+		/// The user is a GameJolt admin.
+		/// </summary>
 		Admin
 	}
 
@@ -17,8 +32,17 @@ namespace GameJolt.Objects {
 	/// User statuses.
 	/// </summary>
 	public enum UserStatus {
+		/// <summary>
+		/// The status of the user could not be determined.
+		/// </summary>
 		Undefined,
+		/// <summary>
+		/// The user is still a member of the site.
+		/// </summary>
 		Active,
+		/// <summary>
+		/// The user has been banned.
+		/// </summary>
 		Banned
 	}
 
@@ -109,10 +133,6 @@ namespace GameJolt.Objects {
 			} catch {
 				Status = UserStatus.Undefined;
 			}
-		}
-
-		public override string ToString() {
-			return $"{Name} ({Id})";
 		}
 	}
 }

@@ -18,7 +18,7 @@ namespace GameJolt.Services {
 	/// A sercet trophy's image and description is not visible until a gamer has achieved it.
 	/// </summary>
 	public sealed class Trophies : Service {
-		public Trophies([NotNull] GameJoltApi api) : base(api) { }
+		internal Trophies([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

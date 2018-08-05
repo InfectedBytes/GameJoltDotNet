@@ -21,8 +21,8 @@ namespace GameJolt {
 		/// If the request failed due to an exception, the exception can be retrieved here.
 		/// </summary>
 		public Exception Exception { get; }
-
-		protected Response(bool success, string message, Exception exception) {
+		
+		internal Response(bool success, string message, Exception exception) {
 			Success = success;
 			Message = message;
 			Exception = exception;
@@ -105,6 +105,11 @@ namespace GameJolt {
 	/// <typeparam name="T"></typeparam>
 	[ExcludeFromCodeCoverage]
 	public sealed class Response<T> : Response {
+		/// <summary>
+		/// The data of the response. 
+		/// If the request has succeeded, this value is not null.
+		/// If the request has failed, this value will be null.
+		/// </summary>
 		public T Data { get; }
 
 		internal Response(bool success, string message, Exception exception, T data) : base(success, message, exception) {

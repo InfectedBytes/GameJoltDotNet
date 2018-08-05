@@ -8,7 +8,7 @@ using System.Linq;
 // ReSharper disable All
 
 namespace GameJolt.Utils {
-	public enum JSONBinaryTag {
+	internal enum JSONBinaryTag {
 		Array = 1,
 		Class = 2,
 		Value = 3,
@@ -19,7 +19,7 @@ namespace GameJolt.Utils {
 	}
 
 	[ExcludeFromCodeCoverage]
-	public class JSONNode {
+	internal class JSONNode {
 		#region common interface
 		public virtual void Add(string aKey, JSONNode aItem) { }
 		public virtual JSONNode this[int aIndex] { get { return null; } set { } }
@@ -297,7 +297,7 @@ namespace GameJolt.Utils {
 	} // End of JSONNode
 
 	[ExcludeFromCodeCoverage]
-	public class JSONArray : JSONNode, IEnumerable {
+	internal class JSONArray : JSONNode, IEnumerable {
 		private List<JSONNode> m_List = new List<JSONNode>();
 		public override JSONNode this[int aIndex] {
 			get {
@@ -367,7 +367,7 @@ namespace GameJolt.Utils {
 	} // End of JSONArray
 
 	[ExcludeFromCodeCoverage]
-	public class JSONClass : JSONNode, IEnumerable {
+	internal class JSONClass : JSONNode, IEnumerable {
 		private Dictionary<string, JSONNode> m_Dict = new Dictionary<string, JSONNode>();
 		public override JSONNode this[string aKey] {
 			get {
@@ -470,7 +470,7 @@ namespace GameJolt.Utils {
 	} // End of JSONClass
 
 	[ExcludeFromCodeCoverage]
-	public class JSONData : JSONNode {
+	internal class JSONData : JSONNode {
 		private string m_Data;
 		public override string Value {
 			get { return m_Data; }
@@ -640,7 +640,7 @@ namespace GameJolt.Utils {
 	} // End of JSONLazyCreator
 
 	[ExcludeFromCodeCoverage]
-	public static class JSON {
+	internal static class JSON {
 		public static JSONNode Parse(string aJSON) {
 			return JSONNode.Parse(aJSON);
 		}

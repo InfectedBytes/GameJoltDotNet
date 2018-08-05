@@ -17,7 +17,7 @@ namespace GameJolt.Services {
 	/// It will be helpful in cases where you believe a gamer has illegitimately achieved a high score.
 	/// </summary>
 	public sealed class Scores : Service {
-		public Scores([NotNull] GameJoltApi api) : base(api) { }
+		internal Scores([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

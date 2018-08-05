@@ -147,7 +147,7 @@ namespace GameJolt.Services {
 			throw new ArgumentException($"Unknown timezone: {olsonTimeZoneId}");
 		}
 
-		public Time([NotNull] GameJoltApi api) : base(api) { }
+		internal Time([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

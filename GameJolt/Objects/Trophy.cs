@@ -2,11 +2,30 @@
 using GameJolt.Utils;
 
 namespace GameJolt.Objects {
+	/// <summary>
+	/// The difficulty of the trophy.
+	/// </summary>
 	public enum TrophyDifficulty {
+		/// <summary>
+		/// The difficulty could not be determined.
+		/// </summary>
 		Undefined,
+		/// <summary>
+		/// The easiest trophy to achieve (5 GameJolt EXP).
+		/// </summary>
 		Bronze,
+		/// <summary>
+		/// Medium trophy (10 GameJolt EXP).
+		/// </summary>
 		Silver,
+		/// <summary>
+		/// Hard trophy (15 GameJolt EXP).
+		/// </summary>
 		Gold,
+		/// <summary>
+		/// Hardest trophy to achieve (20 GameJolt EXP). 
+		/// A platinum trophy should be at least 4 times more challenging than a bronze trophy!
+		/// </summary>
 		Platinum
 	}
 

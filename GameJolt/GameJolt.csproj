@@ -18,6 +18,7 @@
     <PackageTags>gamejolt, network, cloud, scoreboard, scores, authentication</PackageTags>
     <PackageReleaseNotes>first prerelease</PackageReleaseNotes>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageIconUrl>https://raw.githubusercontent.com/InfectedBytes/GameJoltDotNet/master/icon.png</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

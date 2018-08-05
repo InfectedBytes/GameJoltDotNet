@@ -10,11 +10,29 @@ namespace GameJolt.Services {
 	/// DataStore operations.
 	/// </summary>
 	public enum DatastoreOperation {
+		/// <summary>
+		/// Adds the value to the current data store item.
+		/// </summary>
 		Add,
+		/// <summary>
+		/// Substracts the value from the current data store item.
+		/// </summary>
 		Subtract,
+		/// <summary>
+		/// Multiplies the value by the current data store item.
+		/// </summary>
 		Multiply,
+		/// <summary>
+		/// Divides the current data store item by the value.
+		/// </summary>
 		Divide,
+		/// <summary>
+		/// Appends the value to the current data store item.
+		/// </summary>
 		Append,
+		/// <summary>
+		/// Prepends the value to the current data store item.
+		/// </summary>
 		Prepend
 	}
 
@@ -23,7 +41,7 @@ namespace GameJolt.Services {
 	/// Caution: GameJolt has a hard limit of 16MB per key-value pair and a soft limit of 1MB per post-request.
 	/// </summary>
 	public sealed class Datastore : Service {
-		public Datastore([NotNull] GameJoltApi api) : base(api) { }
+		internal Datastore([NotNull] GameJoltApi api) : base(api) { }
 
 		#region Task Api
 		/// <summary>

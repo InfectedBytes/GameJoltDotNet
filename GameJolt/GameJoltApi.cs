@@ -19,10 +19,10 @@ namespace GameJolt {
 	public class GameJoltApi {
 		private enum ResponseFormat {Json, Dump}
 
-		public const string ApiProtocol = "https://";
-		public const string ApiRoot = "api.gamejolt.com/api/game/";
-		public const string ApiVersion = "1_2";
-		public const string ApiBaseUrl = ApiProtocol + ApiRoot + "v" + ApiVersion;
+		private const string ApiProtocol = "https://";
+		private const string ApiRoot = "api.gamejolt.com/api/game/";
+		private const string ApiVersion = "1_2";
+		private const string ApiBaseUrl = ApiProtocol + ApiRoot + "v" + ApiVersion;
 
 		private readonly int gameId;
 		private readonly string privateKey;
@@ -74,6 +74,12 @@ namespace GameJolt {
 		[NotNull] public Datastore Datastore { get; }
 		#endregion
 
+		/// <summary>
+		/// Constructs a new API instance using the provided credentials.
+		/// </summary>
+		/// <param name="gameId">The id of your game.</param>
+		/// <param name="privateKey">The private key of your game.</param>
+		/// <param name="timeout">Http request timeout.</param>
 		public GameJoltApi(int gameId, [NotNull] string privateKey, int timeout = 10) {
 			privateKey.ThrowIfNullOrEmpty();
 			this.gameId = gameId;
@@ -108,20 +114,20 @@ namespace GameJolt {
 		/// <param name="method">The GameJolt method to invoke.</param>
 		/// <param name="parameters">The arguments to pass to GameJolt</param>
 		/// <returns></returns>
-		public async Task<Response<JSONNode>> GetAsync([NotNull] string method, IDictionary<string, string> parameters) {
+		internal async Task<Response<JSONNode>> GetAsync([NotNull] string method, IDictionary<string, string> parameters) {
 			method.ThrowIfNullOrEmpty();
 			var response = await http.GetAsync(GetRequestUrl(method, parameters, null, ResponseFormat.Json));
 			var data = await response.Content.ReadAsStringAsync();
 			return ParseJson(data);
 		}
-		
+
 		/// <summary>
 		/// Executes a GET-request and returns the result as a raw string.
 		/// </summary>
 		/// <param name="method">The GameJolt method to invoke.</param>
 		/// <param name="parameters">The arguments to pass to GameJolt</param>
 		/// <returns></returns>
-		public async Task<Response<string>> GetDumpAsync([NotNull] string method, IDictionary<string, string> parameters) {
+		internal async Task<Response<string>> GetDumpAsync([NotNull] string method, IDictionary<string, string> parameters) {
 			method.ThrowIfNullOrEmpty();
 			var response = await http.GetAsync(GetRequestUrl(method, parameters, null, ResponseFormat.Dump));
 			var data = await response.Content.ReadAsStringAsync();
@@ -135,7 +141,7 @@ namespace GameJolt {
 		/// <param name="parameters">The arguments to pass to GameJolt.</param>
 		/// <param name="payload">The payload arguments passed to the POST-request.</param>
 		/// <returns></returns>
-		public async Task<Response<JSONNode>> PostAsync([NotNull] string method, IDictionary<string, string> parameters,
+		internal async Task<Response<JSONNode>> PostAsync([NotNull] string method, IDictionary<string, string> parameters,
 			IDictionary<string, string> payload) {
 			method.ThrowIfNullOrEmpty();
 			var response = await http.PostAsync(GetRequestUrl(method, parameters, payload, ResponseFormat.Json),
@@ -151,7 +157,7 @@ namespace GameJolt {
 		/// <param name="parameters">The arguments to pass to GameJolt.</param>
 		/// <param name="payload">The payload arguments passed to the POST-request.</param>
 		/// <returns></returns>
-		public async Task<Response<string>> PostDumpAsync([NotNull] string method, IDictionary<string, string> parameters,
+		internal async Task<Response<string>> PostDumpAsync([NotNull] string method, IDictionary<string, string> parameters,
 			IDictionary<string, string> payload) {
 			method.ThrowIfNullOrEmpty();
 			var response = await http.PostAsync(GetRequestUrl(method, parameters, payload, ResponseFormat.Dump),

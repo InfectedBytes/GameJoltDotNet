@@ -2,5 +2,5 @@
 
 namespace GameJolt.Utils {
 	[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method | AttributeTargets.Property)]
-	public sealed class ExcludeFromCodeCoverageAttribute : Attribute { }
+	internal sealed class ExcludeFromCodeCoverageAttribute : Attribute { }
 }
