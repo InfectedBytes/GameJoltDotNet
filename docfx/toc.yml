@@ -1,0 +1,7 @@
+- name: Articles
+  href: articles/
+- name: Api Documentation
+  href: api/
+  homepage: api/GameJolt.yml
+- name: Source 🔗
+  href: https://github.com/InfectedBytes/GameJoltDotNet
