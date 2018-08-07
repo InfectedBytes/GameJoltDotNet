@@ -1,4 +1,4 @@
-[Documentation](https://infectedbytes.github.io/GameJoltDotNet/) | [GameJolt Page](https://gamejolt.com/dashboard/games/358157) | [NuGet Package](https://www.nuget.org/packages/GameJoltDotNet/) | [License](https://github.com/InfectedBytes/GameJoltDotNet/blob/master/LICENSE)
+[Documentation](https://infectedbytes.github.io/GameJoltDotNet/) | [GameJolt Page](https://gamejolt.com/games/gamejoltdotnet/358157) | [NuGet Package](https://www.nuget.org/packages/GameJoltDotNet/) | [License](https://github.com/InfectedBytes/GameJoltDotNet/blob/master/LICENSE)
 
 # GameJoltDotNet
 GameJolt [Game API](https://gamejolt.com/game-api/doc) client for the .NET Framework, written entirely in C#.
