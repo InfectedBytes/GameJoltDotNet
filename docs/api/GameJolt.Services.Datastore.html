@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Datastore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Datastore
+   ">
+    <meta name="generator" content="docfx 2.37.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GameJolt.Services.Datastore">
+  
+  
+  <h1 id="GameJolt_Services_Datastore" data-uid="GameJolt.Services.Datastore" class="text-break">Class Datastore
+  </h1>
+  <div class="markdown level0 summary"><p>A cloud-based data storage system. It's completely up to you what you use this for. The more inventive the better!
+Caution: GameJolt has a hard limit of 16MB per key-value pair and a soft limit of 1MB per post-request.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GameJolt.Services.Service.html">Service</a></div>
+    <div class="level2"><span class="xref">Datastore</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GameJolt.Services.Service.html#GameJolt_Services_Service_Api">Service.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap_System_Threading_Tasks_Task_GameJolt_Response__System_Action_GameJolt_Response__">Service.Wrap(Task&lt;Response&gt;, Action&lt;Response&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap__1_System_Threading_Tasks_Task_GameJolt_Response___0___System_Action_GameJolt_Response___0___">Service.Wrap&lt;T&gt;(Task&lt;Response&lt;T&gt;&gt;, Action&lt;Response&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GameJolt.Services.html">GameJolt.Services</a></h6>
+  <h6><strong>Assembly</strong>: GameJolt.dll</h6>
+  <h5 id="GameJolt_Services_Datastore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Datastore : Service</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_Fetch_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_String___.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.Fetch(System.String%2CGameJolt.Objects.Credentials%2CSystem.Action%7BGameJolt.Response%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L164">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_Fetch_" data-uid="GameJolt.Services.Datastore.Fetch*"></a>
+  <h4 id="GameJolt_Services_Datastore_Fetch_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_String___" data-uid="GameJolt.Services.Datastore.Fetch(System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.String}})">Fetch(String, Credentials, Action&lt;Response&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns data from the data store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fetch(string key, Credentials credentials = null, Action&lt;Response&lt;string&gt;&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to fetch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If provided, the data is retrieved from the user's personal storage.
+If left empty, the data is retrieved from the global storage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_FetchAsync_System_String_GameJolt_Objects_Credentials_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.FetchAsync(System.String%2CGameJolt.Objects.Credentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L54">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_FetchAsync_" data-uid="GameJolt.Services.Datastore.FetchAsync*"></a>
+  <h4 id="GameJolt_Services_Datastore_FetchAsync_System_String_GameJolt_Objects_Credentials_" data-uid="GameJolt.Services.Datastore.FetchAsync(System.String,GameJolt.Objects.Credentials)">FetchAsync(String, Credentials)</h4>
+  <div class="markdown level1 summary"><p>Returns data from the data store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;string&gt;&gt; FetchAsync(string key, Credentials credentials = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to fetch.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If provided, the data is retrieved from the user's personal storage.
+If left empty, the data is retrieved from the global storage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_GetKeys_GameJolt_Objects_Credentials_System_String_System_Action_GameJolt_Response_System_String_____.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.GetKeys(GameJolt.Objects.Credentials%2CSystem.String%2CSystem.Action%7BGameJolt.Response%7BSystem.String%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L178">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_GetKeys_" data-uid="GameJolt.Services.Datastore.GetKeys*"></a>
+  <h4 id="GameJolt_Services_Datastore_GetKeys_GameJolt_Objects_Credentials_System_String_System_Action_GameJolt_Response_System_String_____" data-uid="GameJolt.Services.Datastore.GetKeys(GameJolt.Objects.Credentials,System.String,System.Action{GameJolt.Response{System.String[]}})">GetKeys(Credentials, String, Action&lt;Response&lt;String[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns either all the keys in the game's global data store, or all the keys in a user's data store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetKeys(Credentials credentials = null, string pattern = null, Action&lt;Response&lt;string[]&gt;&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If provided, the keys are retrieved from the user's personal storage.
+If left empty, the keys are retrieved from the global storage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pattern</span></td>
+        <td><p>If you apply a pattern to the request, only keys with applicable key names will be returned.
+The placeholder character for patterns is *.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.String</span>[]&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_GetKeysAsync_GameJolt_Objects_Credentials_System_String_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.GetKeysAsync(GameJolt.Objects.Credentials%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L72">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_GetKeysAsync_" data-uid="GameJolt.Services.Datastore.GetKeysAsync*"></a>
+  <h4 id="GameJolt_Services_Datastore_GetKeysAsync_GameJolt_Objects_Credentials_System_String_" data-uid="GameJolt.Services.Datastore.GetKeysAsync(GameJolt.Objects.Credentials,System.String)">GetKeysAsync(Credentials, String)</h4>
+  <div class="markdown level1 summary"><p>Returns either all the keys in the game's global data store, or all the keys in a user's data store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;string[]&gt;&gt; GetKeysAsync(Credentials credentials = null, string pattern = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If provided, the keys are retrieved from the user's personal storage.
+If left empty, the keys are retrieved from the global storage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">pattern</span></td>
+        <td><p>If you apply a pattern to the request, only keys with applicable key names will be returned.
+The placeholder character for patterns is *.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.String</span>[]&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_Remove_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.Remove(System.String%2CGameJolt.Objects.Credentials%2CSystem.Action%7BGameJolt.Response%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L210">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_Remove_" data-uid="GameJolt.Services.Datastore.Remove*"></a>
+  <h4 id="GameJolt_Services_Datastore_Remove_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__" data-uid="GameJolt.Services.Datastore.Remove(System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response})">Remove(String, Credentials, Action&lt;Response&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes data from the data store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(string key, Credentials credentials = null, Action&lt;Response&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If you pass in the user information, the item will be removed from a user's data store.
+If you leave the user information empty, it will be removed from the game's global data store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_RemoveAsync_System_String_GameJolt_Objects_Credentials_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.RemoveAsync(System.String%2CGameJolt.Objects.Credentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L118">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_RemoveAsync_" data-uid="GameJolt.Services.Datastore.RemoveAsync*"></a>
+  <h4 id="GameJolt_Services_Datastore_RemoveAsync_System_String_GameJolt_Objects_Credentials_" data-uid="GameJolt.Services.Datastore.RemoveAsync(System.String,GameJolt.Objects.Credentials)">RemoveAsync(String, Credentials)</h4>
+  <div class="markdown level1 summary"><p>Removes data from the data store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; RemoveAsync(string key, Credentials credentials = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If you pass in the user information, the item will be removed from a user's data store.
+If you leave the user information empty, it will be removed from the game's global data store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_Set_System_String_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.Set(System.String%2CSystem.String%2CGameJolt.Objects.Credentials%2CSystem.Action%7BGameJolt.Response%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L196">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_Set_" data-uid="GameJolt.Services.Datastore.Set*"></a>
+  <h4 id="GameJolt_Services_Datastore_Set_System_String_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__" data-uid="GameJolt.Services.Datastore.Set(System.String,System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response})">Set(String, String, Credentials, Action&lt;Response&gt;)</h4>
+  <div class="markdown level1 summary"><p>Sets data in the data store. You can create new data store items by passing in a key that doesn't yet exist in the data store.
+Caution: GameJolt has a hard limit of 16MB per key-value pair and a soft limit of 1MB per post-request.
+If your data is not url conform, it will be url encoded, which further increases the payload size.
+For example the '+' character will be encoded as &quot;%2B&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(string key, string data, Credentials credentials = null, Action&lt;Response&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data you'd like to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If you pass in the user information, this item will be set in a user's data store.
+If you leave the user information empty, it will be set in the game's global data store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_SetAsync_System_String_System_String_GameJolt_Objects_Credentials_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.SetAsync(System.String%2CSystem.String%2CGameJolt.Objects.Credentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L97">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_SetAsync_" data-uid="GameJolt.Services.Datastore.SetAsync*"></a>
+  <h4 id="GameJolt_Services_Datastore_SetAsync_System_String_System_String_GameJolt_Objects_Credentials_" data-uid="GameJolt.Services.Datastore.SetAsync(System.String,System.String,GameJolt.Objects.Credentials)">SetAsync(String, String, Credentials)</h4>
+  <div class="markdown level1 summary"><p>Sets data in the data store. You can create new data store items by passing in a key that doesn't yet exist in the data store.
+Caution: GameJolt has a hard limit of 16MB per key-value pair and a soft limit of 1MB per post-request.
+If your data is not url conform, it will be url encoded, which further increases the payload size.
+For example the '+' character will be encoded as &quot;%2B&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; SetAsync(string key, string data, Credentials credentials = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data you'd like to set.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If you pass in the user information, this item will be set in a user's data store.
+If you leave the user information empty, it will be set in the game's global data store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_Update_System_String_System_String_GameJolt_Services_DatastoreOperation_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_String___.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.Update(System.String%2CSystem.String%2CGameJolt.Services.DatastoreOperation%2CGameJolt.Objects.Credentials%2CSystem.Action%7BGameJolt.Response%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L227">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_Update_" data-uid="GameJolt.Services.Datastore.Update*"></a>
+  <h4 id="GameJolt_Services_Datastore_Update_System_String_System_String_GameJolt_Services_DatastoreOperation_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_String___" data-uid="GameJolt.Services.Datastore.Update(System.String,System.String,GameJolt.Services.DatastoreOperation,GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.String}})">Update(String, String, DatastoreOperation, Credentials, Action&lt;Response&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates data in the data store. On success, the new value of the data item is returned.
+Caution: GameJolt has a hard limit of 16MB per key-value pair and a soft limit of 1MB per post-request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(string key, string data, DatastoreOperation operation, Credentials credentials = null, Action&lt;Response&lt;string&gt;&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The value you'd like to apply to the data store item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Services.DatastoreOperation.html">DatastoreOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>The operation you'd like to perform.
+Add, Subtract, Multiply and Divide are only applicable to numeric values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If you pass in the user information, this function will use the user's data store.
+If you leave the user information empty, it will use the game's global data store.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore_UpdateAsync_System_String_System_String_GameJolt_Services_DatastoreOperation_GameJolt_Objects_Credentials_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore.UpdateAsync(System.String%2CSystem.String%2CGameJolt.Services.DatastoreOperation%2CGameJolt.Objects.Credentials)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L139">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Datastore_UpdateAsync_" data-uid="GameJolt.Services.Datastore.UpdateAsync*"></a>
+  <h4 id="GameJolt_Services_Datastore_UpdateAsync_System_String_System_String_GameJolt_Services_DatastoreOperation_GameJolt_Objects_Credentials_" data-uid="GameJolt.Services.Datastore.UpdateAsync(System.String,System.String,GameJolt.Services.DatastoreOperation,GameJolt.Objects.Credentials)">UpdateAsync(String, String, DatastoreOperation, Credentials)</h4>
+  <div class="markdown level1 summary"><p>Updates data in the data store. On success, the new value of the data item is returned.
+Caution: GameJolt has a hard limit of 16MB per key-value pair and a soft limit of 1MB per post-request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;string&gt;&gt; UpdateAsync(string key, string data, DatastoreOperation operation, Credentials credentials = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the data item you'd like to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The value you'd like to apply to the data store item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Services.DatastoreOperation.html">DatastoreOperation</a></td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>The operation you'd like to perform.
+Add, Subtract, Multiply and Divide are only applicable to numeric values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If you pass in the user information, this function will use the user's data store.
+If you leave the user information empty, it will use the game's global data store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Datastore.md&amp;value=---%0Auid%3A%20GameJolt.Services.Datastore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Datastore.cs/#L43" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

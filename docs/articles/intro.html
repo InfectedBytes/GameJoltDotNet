@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction to GameJoltDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction to GameJoltDotNet ">
+    <meta name="generator" content="docfx 2.37.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction-to-gamejoltdotnet">Introduction to <code>GameJoltDotNet</code></h1>
+
+<p>The <a href="https://gamejolt.com/game-api/doc"><code>GameJolt Game API</code></a> is a service provided by <a href="https://gamejolt.com/">GameJolt</a>,
+which provides you with a number of cloud based features for your game, including:</p>
+<ul>
+<li>Online score tables</li>
+<li>Trophies (achievements)</li>
+<li>Cloud data storage</li>
+<li>Game session logging</li>
+<li>User verification</li>
+</ul>
+<p>In order to use these features, one has to communicate with the GameJolt servers through their RESTful web service.</p>
+<p><code>GameJoltDotNet</code> is a <code>.NET</code> library which implements all of GameJolt's services and provides you with a clean and
+simple interface to communicate with the GameJolt servers. It is written in <code>C#</code> and fully documented by using <code>C#'s</code>
+xml documentations comments.</p>
+<h2 id="install">Install</h2>
+<p>The easiest way to add this library to your project is by using NuGet.
+Just add the <a href="https://www.nuget.org/packages/GameJoltDotNet/"><code>GameJoltDotNet</code></a> NuGet package to your project and you're done.</p>
+<p>Alternatively you can also download the compiled dll from <a href="https://github.com/InfectedBytes/GameJoltDotNet/releases">github</a>
+or <a href="https://gamejolt.com/games/gamejoltdotnet/358157">GameJolt</a> and then add a reference to it in your project.</p>
+<h2 id="supported-net-frameworks">Supported .NET Frameworks</h2>
+<p>For best portability this library is based on .NET Standard 1.3 and can therefore be used on a wide variety of different platforms.
+The following platforms are supported:</p>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.NET Standard</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>.NET Core</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>.NET Framework</td>
+<td>4.6</td>
+</tr>
+<tr>
+<td>Mono</td>
+<td>4.6</td>
+</tr>
+<tr>
+<td>Xamarin.iOS</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>Xamarin.Mac</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Xamarin.Android</td>
+<td>7.0</td>
+</tr>
+<tr>
+<td>Universal Windows Platform</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-languages">Supported Languages</h2>
+<p>Since this library is written in plain <code>C#</code>, the compiled DLL can be used by any <code>.NET</code> language, for example:</p>
+<ul>
+<li><code>C#</code></li>
+<li><code>Visual Basic .NET</code></li>
+<li><code>F#</code></li>
+<li><code>Nemerle</code></li>
+<li>etc.</li>
+</ul>
+<p>Just add a reference to <code>GameJolt.dll</code> and you're ready to got.</p>
+<h2 id="simple-example">Simple Example</h2>
+<p>First of all you have to create a new api instance:</p>
+<pre><code class="lang-cs">var api = new GameJoltApi(gameId, privateKey);
+</code></pre>
+<p>Afterwards you can directly use the different GameJolt features.</p>
+<pre><code class="lang-cs">// by using async/await:
+var response = await api.Scores.FetchAsync();
+if(response.Success) {
+    // response.Data contains the list of scores
+}
+
+// or by using the callback mechanism:
+api.Scores.Fetch(callback: response =&gt; {
+    if(response.Success) {
+        // response.Data contains the list of scores
+    }
+});
+</code></pre>
+<p>Some APIs require an authenticated user, because they set or get data for a certain user. The authentication can be done like so:</p>
+<pre><code class="lang-cs">var auth = await api.Users.AuthAsync(userName, userToken);
+if(auth.Success) {
+    api.Trophies.SetAchieved(auth.Data, trophyId);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/docfx/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

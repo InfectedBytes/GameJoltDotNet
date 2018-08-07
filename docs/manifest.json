@@ -1,0 +1,418 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Dev/C#/Projects/GameJoltDotNet/docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.GameJoltApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.GameJoltApi.html",
+          "hash": "7jGzMs1E45FhsT6LcY90QA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.Credentials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.Credentials.html",
+          "hash": "zbvz9kiGEOIlkgSgTJJvww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.Score.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.Score.html",
+          "hash": "FNmIfzHhXSJ1Fkx1EkmOWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.Table.html",
+          "hash": "MG+aeADL+3/rAQyT4eo4pg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.Trophy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.Trophy.html",
+          "hash": "i0LfXBYPNXcgLQp0ucSTMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.TrophyDifficulty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.TrophyDifficulty.html",
+          "hash": "I7CrTCr+ggWsZy6FE0kvzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.User.html",
+          "hash": "zft9Tf2Ci1RTzGdzygdLkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.UserStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.UserStatus.html",
+          "hash": "vkBxuTip9JFputn3p2bI+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.UserType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.UserType.html",
+          "hash": "RpvajxdlDwT9Vab2aauiHA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Objects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Objects.html",
+          "hash": "nus/4htDilqqw9VDccX6zg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Response-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Response-1.html",
+          "hash": "Vi4iGMzZYGd4A3HH0fqB0Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Response.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Response.html",
+          "hash": "Q5+crmYsDToYY11dAt/KNg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Datastore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Datastore.html",
+          "hash": "XUWQyEYjl8csmugxIzd3iA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.DatastoreOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.DatastoreOperation.html",
+          "hash": "Y6MCfpZXw79sQe89BdfLeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Friends.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Friends.html",
+          "hash": "SQmJaPz1ZLQpCKYskUS1fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Scores.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Scores.html",
+          "hash": "9p/V2TPUw4CAmkowl09FkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Service.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Service.html",
+          "hash": "Xgd6rsbOyBYb6hfk0eBl4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Sessions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Sessions.html",
+          "hash": "fn+ORdWorwWxA/t1k3c4LA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Time.html",
+          "hash": "2tunc8RsMd1APJp2zLKDoA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Trophies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Trophies.html",
+          "hash": "oG3wLHLASjfWS4QXw5AeNw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.Users.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.Users.html",
+          "hash": "t7hm/hdnqCtheNJ0kVUAdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.Services.html",
+          "hash": "WN6TT/lFjLx+D7Y4dvtQYg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameJolt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameJolt.html",
+          "hash": "t34nFCBWCB9S7UQZfxgCqA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "p3iFcqJNV4WU/mcR4KQNKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "uWN1rNgAqh74di4mgrfjUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/gamejolt.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/gamejolt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "oBDM/w6Ncn2SSaYEQD6fwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "rwMjFDp/l+3Mm71Yw+NQZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,1652 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GameJolt
+  name: GameJolt
+  href: api/GameJolt.html
+  commentId: N:GameJolt
+  fullName: GameJolt
+  nameWithType: GameJolt
+- uid: GameJolt.GameJoltApi
+  name: GameJoltApi
+  href: api/GameJolt.GameJoltApi.html
+  commentId: T:GameJolt.GameJoltApi
+  fullName: GameJolt.GameJoltApi
+  nameWithType: GameJoltApi
+- uid: GameJolt.GameJoltApi.#ctor(System.Int32,System.String,System.Int32)
+  name: GameJoltApi(Int32, String, Int32)
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi__ctor_System_Int32_System_String_System_Int32_
+  commentId: M:GameJolt.GameJoltApi.#ctor(System.Int32,System.String,System.Int32)
+  fullName: GameJolt.GameJoltApi.GameJoltApi(System.Int32, System.String, System.Int32)
+  nameWithType: GameJoltApi.GameJoltApi(Int32, String, Int32)
+- uid: GameJolt.GameJoltApi.#ctor*
+  name: GameJoltApi
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi__ctor_
+  commentId: Overload:GameJolt.GameJoltApi.#ctor
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.GameJoltApi
+  nameWithType: GameJoltApi.GameJoltApi
+- uid: GameJolt.GameJoltApi.Datastore
+  name: Datastore
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Datastore
+  commentId: P:GameJolt.GameJoltApi.Datastore
+  fullName: GameJolt.GameJoltApi.Datastore
+  nameWithType: GameJoltApi.Datastore
+- uid: GameJolt.GameJoltApi.Datastore*
+  name: Datastore
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Datastore_
+  commentId: Overload:GameJolt.GameJoltApi.Datastore
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Datastore
+  nameWithType: GameJoltApi.Datastore
+- uid: GameJolt.GameJoltApi.Friends
+  name: Friends
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Friends
+  commentId: P:GameJolt.GameJoltApi.Friends
+  fullName: GameJolt.GameJoltApi.Friends
+  nameWithType: GameJoltApi.Friends
+- uid: GameJolt.GameJoltApi.Friends*
+  name: Friends
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Friends_
+  commentId: Overload:GameJolt.GameJoltApi.Friends
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Friends
+  nameWithType: GameJoltApi.Friends
+- uid: GameJolt.GameJoltApi.Scores
+  name: Scores
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Scores
+  commentId: P:GameJolt.GameJoltApi.Scores
+  fullName: GameJolt.GameJoltApi.Scores
+  nameWithType: GameJoltApi.Scores
+- uid: GameJolt.GameJoltApi.Scores*
+  name: Scores
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Scores_
+  commentId: Overload:GameJolt.GameJoltApi.Scores
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Scores
+  nameWithType: GameJoltApi.Scores
+- uid: GameJolt.GameJoltApi.Sessions
+  name: Sessions
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Sessions
+  commentId: P:GameJolt.GameJoltApi.Sessions
+  fullName: GameJolt.GameJoltApi.Sessions
+  nameWithType: GameJoltApi.Sessions
+- uid: GameJolt.GameJoltApi.Sessions*
+  name: Sessions
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Sessions_
+  commentId: Overload:GameJolt.GameJoltApi.Sessions
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Sessions
+  nameWithType: GameJoltApi.Sessions
+- uid: GameJolt.GameJoltApi.Time
+  name: Time
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Time
+  commentId: P:GameJolt.GameJoltApi.Time
+  fullName: GameJolt.GameJoltApi.Time
+  nameWithType: GameJoltApi.Time
+- uid: GameJolt.GameJoltApi.Time*
+  name: Time
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Time_
+  commentId: Overload:GameJolt.GameJoltApi.Time
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Time
+  nameWithType: GameJoltApi.Time
+- uid: GameJolt.GameJoltApi.Timeout
+  name: Timeout
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Timeout
+  commentId: P:GameJolt.GameJoltApi.Timeout
+  fullName: GameJolt.GameJoltApi.Timeout
+  nameWithType: GameJoltApi.Timeout
+- uid: GameJolt.GameJoltApi.Timeout*
+  name: Timeout
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Timeout_
+  commentId: Overload:GameJolt.GameJoltApi.Timeout
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Timeout
+  nameWithType: GameJoltApi.Timeout
+- uid: GameJolt.GameJoltApi.Trophies
+  name: Trophies
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Trophies
+  commentId: P:GameJolt.GameJoltApi.Trophies
+  fullName: GameJolt.GameJoltApi.Trophies
+  nameWithType: GameJoltApi.Trophies
+- uid: GameJolt.GameJoltApi.Trophies*
+  name: Trophies
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Trophies_
+  commentId: Overload:GameJolt.GameJoltApi.Trophies
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Trophies
+  nameWithType: GameJoltApi.Trophies
+- uid: GameJolt.GameJoltApi.Users
+  name: Users
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Users
+  commentId: P:GameJolt.GameJoltApi.Users
+  fullName: GameJolt.GameJoltApi.Users
+  nameWithType: GameJoltApi.Users
+- uid: GameJolt.GameJoltApi.Users*
+  name: Users
+  href: api/GameJolt.GameJoltApi.html#GameJolt_GameJoltApi_Users_
+  commentId: Overload:GameJolt.GameJoltApi.Users
+  isSpec: "True"
+  fullName: GameJolt.GameJoltApi.Users
+  nameWithType: GameJoltApi.Users
+- uid: GameJolt.Objects
+  name: GameJolt.Objects
+  href: api/GameJolt.Objects.html
+  commentId: N:GameJolt.Objects
+  fullName: GameJolt.Objects
+  nameWithType: GameJolt.Objects
+- uid: GameJolt.Objects.Credentials
+  name: Credentials
+  href: api/GameJolt.Objects.Credentials.html
+  commentId: T:GameJolt.Objects.Credentials
+  fullName: GameJolt.Objects.Credentials
+  nameWithType: Credentials
+- uid: GameJolt.Objects.Credentials.Name
+  name: Name
+  href: api/GameJolt.Objects.Credentials.html#GameJolt_Objects_Credentials_Name
+  commentId: P:GameJolt.Objects.Credentials.Name
+  fullName: GameJolt.Objects.Credentials.Name
+  nameWithType: Credentials.Name
+- uid: GameJolt.Objects.Credentials.Name*
+  name: Name
+  href: api/GameJolt.Objects.Credentials.html#GameJolt_Objects_Credentials_Name_
+  commentId: Overload:GameJolt.Objects.Credentials.Name
+  isSpec: "True"
+  fullName: GameJolt.Objects.Credentials.Name
+  nameWithType: Credentials.Name
+- uid: GameJolt.Objects.Credentials.Token
+  name: Token
+  href: api/GameJolt.Objects.Credentials.html#GameJolt_Objects_Credentials_Token
+  commentId: P:GameJolt.Objects.Credentials.Token
+  fullName: GameJolt.Objects.Credentials.Token
+  nameWithType: Credentials.Token
+- uid: GameJolt.Objects.Credentials.Token*
+  name: Token
+  href: api/GameJolt.Objects.Credentials.html#GameJolt_Objects_Credentials_Token_
+  commentId: Overload:GameJolt.Objects.Credentials.Token
+  isSpec: "True"
+  fullName: GameJolt.Objects.Credentials.Token
+  nameWithType: Credentials.Token
+- uid: GameJolt.Objects.Score
+  name: Score
+  href: api/GameJolt.Objects.Score.html
+  commentId: T:GameJolt.Objects.Score
+  fullName: GameJolt.Objects.Score
+  nameWithType: Score
+- uid: GameJolt.Objects.Score.Extra
+  name: Extra
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Extra
+  commentId: P:GameJolt.Objects.Score.Extra
+  fullName: GameJolt.Objects.Score.Extra
+  nameWithType: Score.Extra
+- uid: GameJolt.Objects.Score.Extra*
+  name: Extra
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Extra_
+  commentId: Overload:GameJolt.Objects.Score.Extra
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.Extra
+  nameWithType: Score.Extra
+- uid: GameJolt.Objects.Score.GuestName
+  name: GuestName
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_GuestName
+  commentId: P:GameJolt.Objects.Score.GuestName
+  fullName: GameJolt.Objects.Score.GuestName
+  nameWithType: Score.GuestName
+- uid: GameJolt.Objects.Score.GuestName*
+  name: GuestName
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_GuestName_
+  commentId: Overload:GameJolt.Objects.Score.GuestName
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.GuestName
+  nameWithType: Score.GuestName
+- uid: GameJolt.Objects.Score.IsGuestScore
+  name: IsGuestScore
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_IsGuestScore
+  commentId: P:GameJolt.Objects.Score.IsGuestScore
+  fullName: GameJolt.Objects.Score.IsGuestScore
+  nameWithType: Score.IsGuestScore
+- uid: GameJolt.Objects.Score.IsGuestScore*
+  name: IsGuestScore
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_IsGuestScore_
+  commentId: Overload:GameJolt.Objects.Score.IsGuestScore
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.IsGuestScore
+  nameWithType: Score.IsGuestScore
+- uid: GameJolt.Objects.Score.Name
+  name: Name
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Name
+  commentId: P:GameJolt.Objects.Score.Name
+  fullName: GameJolt.Objects.Score.Name
+  nameWithType: Score.Name
+- uid: GameJolt.Objects.Score.Name*
+  name: Name
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Name_
+  commentId: Overload:GameJolt.Objects.Score.Name
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.Name
+  nameWithType: Score.Name
+- uid: GameJolt.Objects.Score.Stored
+  name: Stored
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Stored
+  commentId: P:GameJolt.Objects.Score.Stored
+  fullName: GameJolt.Objects.Score.Stored
+  nameWithType: Score.Stored
+- uid: GameJolt.Objects.Score.Stored*
+  name: Stored
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Stored_
+  commentId: Overload:GameJolt.Objects.Score.Stored
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.Stored
+  nameWithType: Score.Stored
+- uid: GameJolt.Objects.Score.StoredTimestamp
+  name: StoredTimestamp
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_StoredTimestamp
+  commentId: P:GameJolt.Objects.Score.StoredTimestamp
+  fullName: GameJolt.Objects.Score.StoredTimestamp
+  nameWithType: Score.StoredTimestamp
+- uid: GameJolt.Objects.Score.StoredTimestamp*
+  name: StoredTimestamp
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_StoredTimestamp_
+  commentId: Overload:GameJolt.Objects.Score.StoredTimestamp
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.StoredTimestamp
+  nameWithType: Score.StoredTimestamp
+- uid: GameJolt.Objects.Score.Text
+  name: Text
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Text
+  commentId: P:GameJolt.Objects.Score.Text
+  fullName: GameJolt.Objects.Score.Text
+  nameWithType: Score.Text
+- uid: GameJolt.Objects.Score.Text*
+  name: Text
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Text_
+  commentId: Overload:GameJolt.Objects.Score.Text
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.Text
+  nameWithType: Score.Text
+- uid: GameJolt.Objects.Score.UserId
+  name: UserId
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_UserId
+  commentId: P:GameJolt.Objects.Score.UserId
+  fullName: GameJolt.Objects.Score.UserId
+  nameWithType: Score.UserId
+- uid: GameJolt.Objects.Score.UserId*
+  name: UserId
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_UserId_
+  commentId: Overload:GameJolt.Objects.Score.UserId
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.UserId
+  nameWithType: Score.UserId
+- uid: GameJolt.Objects.Score.UserName
+  name: UserName
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_UserName
+  commentId: P:GameJolt.Objects.Score.UserName
+  fullName: GameJolt.Objects.Score.UserName
+  nameWithType: Score.UserName
+- uid: GameJolt.Objects.Score.UserName*
+  name: UserName
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_UserName_
+  commentId: Overload:GameJolt.Objects.Score.UserName
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.UserName
+  nameWithType: Score.UserName
+- uid: GameJolt.Objects.Score.Value
+  name: Value
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Value
+  commentId: P:GameJolt.Objects.Score.Value
+  fullName: GameJolt.Objects.Score.Value
+  nameWithType: Score.Value
+- uid: GameJolt.Objects.Score.Value*
+  name: Value
+  href: api/GameJolt.Objects.Score.html#GameJolt_Objects_Score_Value_
+  commentId: Overload:GameJolt.Objects.Score.Value
+  isSpec: "True"
+  fullName: GameJolt.Objects.Score.Value
+  nameWithType: Score.Value
+- uid: GameJolt.Objects.Table
+  name: Table
+  href: api/GameJolt.Objects.Table.html
+  commentId: T:GameJolt.Objects.Table
+  fullName: GameJolt.Objects.Table
+  nameWithType: Table
+- uid: GameJolt.Objects.Table.Description
+  name: Description
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Description
+  commentId: P:GameJolt.Objects.Table.Description
+  fullName: GameJolt.Objects.Table.Description
+  nameWithType: Table.Description
+- uid: GameJolt.Objects.Table.Description*
+  name: Description
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Description_
+  commentId: Overload:GameJolt.Objects.Table.Description
+  isSpec: "True"
+  fullName: GameJolt.Objects.Table.Description
+  nameWithType: Table.Description
+- uid: GameJolt.Objects.Table.Id
+  name: Id
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Id
+  commentId: P:GameJolt.Objects.Table.Id
+  fullName: GameJolt.Objects.Table.Id
+  nameWithType: Table.Id
+- uid: GameJolt.Objects.Table.Id*
+  name: Id
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Id_
+  commentId: Overload:GameJolt.Objects.Table.Id
+  isSpec: "True"
+  fullName: GameJolt.Objects.Table.Id
+  nameWithType: Table.Id
+- uid: GameJolt.Objects.Table.Name
+  name: Name
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Name
+  commentId: P:GameJolt.Objects.Table.Name
+  fullName: GameJolt.Objects.Table.Name
+  nameWithType: Table.Name
+- uid: GameJolt.Objects.Table.Name*
+  name: Name
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Name_
+  commentId: Overload:GameJolt.Objects.Table.Name
+  isSpec: "True"
+  fullName: GameJolt.Objects.Table.Name
+  nameWithType: Table.Name
+- uid: GameJolt.Objects.Table.Primary
+  name: Primary
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Primary
+  commentId: P:GameJolt.Objects.Table.Primary
+  fullName: GameJolt.Objects.Table.Primary
+  nameWithType: Table.Primary
+- uid: GameJolt.Objects.Table.Primary*
+  name: Primary
+  href: api/GameJolt.Objects.Table.html#GameJolt_Objects_Table_Primary_
+  commentId: Overload:GameJolt.Objects.Table.Primary
+  isSpec: "True"
+  fullName: GameJolt.Objects.Table.Primary
+  nameWithType: Table.Primary
+- uid: GameJolt.Objects.Trophy
+  name: Trophy
+  href: api/GameJolt.Objects.Trophy.html
+  commentId: T:GameJolt.Objects.Trophy
+  fullName: GameJolt.Objects.Trophy
+  nameWithType: Trophy
+- uid: GameJolt.Objects.Trophy.Achieved
+  name: Achieved
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Achieved
+  commentId: P:GameJolt.Objects.Trophy.Achieved
+  fullName: GameJolt.Objects.Trophy.Achieved
+  nameWithType: Trophy.Achieved
+- uid: GameJolt.Objects.Trophy.Achieved*
+  name: Achieved
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Achieved_
+  commentId: Overload:GameJolt.Objects.Trophy.Achieved
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.Achieved
+  nameWithType: Trophy.Achieved
+- uid: GameJolt.Objects.Trophy.Description
+  name: Description
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Description
+  commentId: P:GameJolt.Objects.Trophy.Description
+  fullName: GameJolt.Objects.Trophy.Description
+  nameWithType: Trophy.Description
+- uid: GameJolt.Objects.Trophy.Description*
+  name: Description
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Description_
+  commentId: Overload:GameJolt.Objects.Trophy.Description
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.Description
+  nameWithType: Trophy.Description
+- uid: GameJolt.Objects.Trophy.Difficulty
+  name: Difficulty
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Difficulty
+  commentId: P:GameJolt.Objects.Trophy.Difficulty
+  fullName: GameJolt.Objects.Trophy.Difficulty
+  nameWithType: Trophy.Difficulty
+- uid: GameJolt.Objects.Trophy.Difficulty*
+  name: Difficulty
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Difficulty_
+  commentId: Overload:GameJolt.Objects.Trophy.Difficulty
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.Difficulty
+  nameWithType: Trophy.Difficulty
+- uid: GameJolt.Objects.Trophy.Id
+  name: Id
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Id
+  commentId: P:GameJolt.Objects.Trophy.Id
+  fullName: GameJolt.Objects.Trophy.Id
+  nameWithType: Trophy.Id
+- uid: GameJolt.Objects.Trophy.Id*
+  name: Id
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Id_
+  commentId: Overload:GameJolt.Objects.Trophy.Id
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.Id
+  nameWithType: Trophy.Id
+- uid: GameJolt.Objects.Trophy.ImageUrl
+  name: ImageUrl
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_ImageUrl
+  commentId: P:GameJolt.Objects.Trophy.ImageUrl
+  fullName: GameJolt.Objects.Trophy.ImageUrl
+  nameWithType: Trophy.ImageUrl
+- uid: GameJolt.Objects.Trophy.ImageUrl*
+  name: ImageUrl
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_ImageUrl_
+  commentId: Overload:GameJolt.Objects.Trophy.ImageUrl
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.ImageUrl
+  nameWithType: Trophy.ImageUrl
+- uid: GameJolt.Objects.Trophy.IsSecret
+  name: IsSecret
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_IsSecret
+  commentId: P:GameJolt.Objects.Trophy.IsSecret
+  fullName: GameJolt.Objects.Trophy.IsSecret
+  nameWithType: Trophy.IsSecret
+- uid: GameJolt.Objects.Trophy.IsSecret*
+  name: IsSecret
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_IsSecret_
+  commentId: Overload:GameJolt.Objects.Trophy.IsSecret
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.IsSecret
+  nameWithType: Trophy.IsSecret
+- uid: GameJolt.Objects.Trophy.Title
+  name: Title
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Title
+  commentId: P:GameJolt.Objects.Trophy.Title
+  fullName: GameJolt.Objects.Trophy.Title
+  nameWithType: Trophy.Title
+- uid: GameJolt.Objects.Trophy.Title*
+  name: Title
+  href: api/GameJolt.Objects.Trophy.html#GameJolt_Objects_Trophy_Title_
+  commentId: Overload:GameJolt.Objects.Trophy.Title
+  isSpec: "True"
+  fullName: GameJolt.Objects.Trophy.Title
+  nameWithType: Trophy.Title
+- uid: GameJolt.Objects.TrophyDifficulty
+  name: TrophyDifficulty
+  href: api/GameJolt.Objects.TrophyDifficulty.html
+  commentId: T:GameJolt.Objects.TrophyDifficulty
+  fullName: GameJolt.Objects.TrophyDifficulty
+  nameWithType: TrophyDifficulty
+- uid: GameJolt.Objects.TrophyDifficulty.Bronze
+  name: Bronze
+  href: api/GameJolt.Objects.TrophyDifficulty.html#GameJolt_Objects_TrophyDifficulty_Bronze
+  commentId: F:GameJolt.Objects.TrophyDifficulty.Bronze
+  fullName: GameJolt.Objects.TrophyDifficulty.Bronze
+  nameWithType: TrophyDifficulty.Bronze
+- uid: GameJolt.Objects.TrophyDifficulty.Gold
+  name: Gold
+  href: api/GameJolt.Objects.TrophyDifficulty.html#GameJolt_Objects_TrophyDifficulty_Gold
+  commentId: F:GameJolt.Objects.TrophyDifficulty.Gold
+  fullName: GameJolt.Objects.TrophyDifficulty.Gold
+  nameWithType: TrophyDifficulty.Gold
+- uid: GameJolt.Objects.TrophyDifficulty.Platinum
+  name: Platinum
+  href: api/GameJolt.Objects.TrophyDifficulty.html#GameJolt_Objects_TrophyDifficulty_Platinum
+  commentId: F:GameJolt.Objects.TrophyDifficulty.Platinum
+  fullName: GameJolt.Objects.TrophyDifficulty.Platinum
+  nameWithType: TrophyDifficulty.Platinum
+- uid: GameJolt.Objects.TrophyDifficulty.Silver
+  name: Silver
+  href: api/GameJolt.Objects.TrophyDifficulty.html#GameJolt_Objects_TrophyDifficulty_Silver
+  commentId: F:GameJolt.Objects.TrophyDifficulty.Silver
+  fullName: GameJolt.Objects.TrophyDifficulty.Silver
+  nameWithType: TrophyDifficulty.Silver
+- uid: GameJolt.Objects.TrophyDifficulty.Undefined
+  name: Undefined
+  href: api/GameJolt.Objects.TrophyDifficulty.html#GameJolt_Objects_TrophyDifficulty_Undefined
+  commentId: F:GameJolt.Objects.TrophyDifficulty.Undefined
+  fullName: GameJolt.Objects.TrophyDifficulty.Undefined
+  nameWithType: TrophyDifficulty.Undefined
+- uid: GameJolt.Objects.User
+  name: User
+  href: api/GameJolt.Objects.User.html
+  commentId: T:GameJolt.Objects.User
+  fullName: GameJolt.Objects.User
+  nameWithType: User
+- uid: GameJolt.Objects.User.AvatarUrl
+  name: AvatarUrl
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_AvatarUrl
+  commentId: P:GameJolt.Objects.User.AvatarUrl
+  fullName: GameJolt.Objects.User.AvatarUrl
+  nameWithType: User.AvatarUrl
+- uid: GameJolt.Objects.User.AvatarUrl*
+  name: AvatarUrl
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_AvatarUrl_
+  commentId: Overload:GameJolt.Objects.User.AvatarUrl
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.AvatarUrl
+  nameWithType: User.AvatarUrl
+- uid: GameJolt.Objects.User.DeveloperDescription
+  name: DeveloperDescription
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_DeveloperDescription
+  commentId: P:GameJolt.Objects.User.DeveloperDescription
+  fullName: GameJolt.Objects.User.DeveloperDescription
+  nameWithType: User.DeveloperDescription
+- uid: GameJolt.Objects.User.DeveloperDescription*
+  name: DeveloperDescription
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_DeveloperDescription_
+  commentId: Overload:GameJolt.Objects.User.DeveloperDescription
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.DeveloperDescription
+  nameWithType: User.DeveloperDescription
+- uid: GameJolt.Objects.User.DeveloperName
+  name: DeveloperName
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_DeveloperName
+  commentId: P:GameJolt.Objects.User.DeveloperName
+  fullName: GameJolt.Objects.User.DeveloperName
+  nameWithType: User.DeveloperName
+- uid: GameJolt.Objects.User.DeveloperName*
+  name: DeveloperName
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_DeveloperName_
+  commentId: Overload:GameJolt.Objects.User.DeveloperName
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.DeveloperName
+  nameWithType: User.DeveloperName
+- uid: GameJolt.Objects.User.DeveloperWebsite
+  name: DeveloperWebsite
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_DeveloperWebsite
+  commentId: P:GameJolt.Objects.User.DeveloperWebsite
+  fullName: GameJolt.Objects.User.DeveloperWebsite
+  nameWithType: User.DeveloperWebsite
+- uid: GameJolt.Objects.User.DeveloperWebsite*
+  name: DeveloperWebsite
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_DeveloperWebsite_
+  commentId: Overload:GameJolt.Objects.User.DeveloperWebsite
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.DeveloperWebsite
+  nameWithType: User.DeveloperWebsite
+- uid: GameJolt.Objects.User.Id
+  name: Id
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Id
+  commentId: P:GameJolt.Objects.User.Id
+  fullName: GameJolt.Objects.User.Id
+  nameWithType: User.Id
+- uid: GameJolt.Objects.User.Id*
+  name: Id
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Id_
+  commentId: Overload:GameJolt.Objects.User.Id
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.Id
+  nameWithType: User.Id
+- uid: GameJolt.Objects.User.LastLoggedIn
+  name: LastLoggedIn
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_LastLoggedIn
+  commentId: P:GameJolt.Objects.User.LastLoggedIn
+  fullName: GameJolt.Objects.User.LastLoggedIn
+  nameWithType: User.LastLoggedIn
+- uid: GameJolt.Objects.User.LastLoggedIn*
+  name: LastLoggedIn
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_LastLoggedIn_
+  commentId: Overload:GameJolt.Objects.User.LastLoggedIn
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.LastLoggedIn
+  nameWithType: User.LastLoggedIn
+- uid: GameJolt.Objects.User.LastLoggedInTimestamp
+  name: LastLoggedInTimestamp
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_LastLoggedInTimestamp
+  commentId: P:GameJolt.Objects.User.LastLoggedInTimestamp
+  fullName: GameJolt.Objects.User.LastLoggedInTimestamp
+  nameWithType: User.LastLoggedInTimestamp
+- uid: GameJolt.Objects.User.LastLoggedInTimestamp*
+  name: LastLoggedInTimestamp
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_LastLoggedInTimestamp_
+  commentId: Overload:GameJolt.Objects.User.LastLoggedInTimestamp
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.LastLoggedInTimestamp
+  nameWithType: User.LastLoggedInTimestamp
+- uid: GameJolt.Objects.User.Name
+  name: Name
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Name
+  commentId: P:GameJolt.Objects.User.Name
+  fullName: GameJolt.Objects.User.Name
+  nameWithType: User.Name
+- uid: GameJolt.Objects.User.Name*
+  name: Name
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Name_
+  commentId: Overload:GameJolt.Objects.User.Name
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.Name
+  nameWithType: User.Name
+- uid: GameJolt.Objects.User.SignedUp
+  name: SignedUp
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_SignedUp
+  commentId: P:GameJolt.Objects.User.SignedUp
+  fullName: GameJolt.Objects.User.SignedUp
+  nameWithType: User.SignedUp
+- uid: GameJolt.Objects.User.SignedUp*
+  name: SignedUp
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_SignedUp_
+  commentId: Overload:GameJolt.Objects.User.SignedUp
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.SignedUp
+  nameWithType: User.SignedUp
+- uid: GameJolt.Objects.User.SignedUpTimestamp
+  name: SignedUpTimestamp
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_SignedUpTimestamp
+  commentId: P:GameJolt.Objects.User.SignedUpTimestamp
+  fullName: GameJolt.Objects.User.SignedUpTimestamp
+  nameWithType: User.SignedUpTimestamp
+- uid: GameJolt.Objects.User.SignedUpTimestamp*
+  name: SignedUpTimestamp
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_SignedUpTimestamp_
+  commentId: Overload:GameJolt.Objects.User.SignedUpTimestamp
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.SignedUpTimestamp
+  nameWithType: User.SignedUpTimestamp
+- uid: GameJolt.Objects.User.Status
+  name: Status
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Status
+  commentId: P:GameJolt.Objects.User.Status
+  fullName: GameJolt.Objects.User.Status
+  nameWithType: User.Status
+- uid: GameJolt.Objects.User.Status*
+  name: Status
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Status_
+  commentId: Overload:GameJolt.Objects.User.Status
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.Status
+  nameWithType: User.Status
+- uid: GameJolt.Objects.User.Type
+  name: Type
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Type
+  commentId: P:GameJolt.Objects.User.Type
+  fullName: GameJolt.Objects.User.Type
+  nameWithType: User.Type
+- uid: GameJolt.Objects.User.Type*
+  name: Type
+  href: api/GameJolt.Objects.User.html#GameJolt_Objects_User_Type_
+  commentId: Overload:GameJolt.Objects.User.Type
+  isSpec: "True"
+  fullName: GameJolt.Objects.User.Type
+  nameWithType: User.Type
+- uid: GameJolt.Objects.UserStatus
+  name: UserStatus
+  href: api/GameJolt.Objects.UserStatus.html
+  commentId: T:GameJolt.Objects.UserStatus
+  fullName: GameJolt.Objects.UserStatus
+  nameWithType: UserStatus
+- uid: GameJolt.Objects.UserStatus.Active
+  name: Active
+  href: api/GameJolt.Objects.UserStatus.html#GameJolt_Objects_UserStatus_Active
+  commentId: F:GameJolt.Objects.UserStatus.Active
+  fullName: GameJolt.Objects.UserStatus.Active
+  nameWithType: UserStatus.Active
+- uid: GameJolt.Objects.UserStatus.Banned
+  name: Banned
+  href: api/GameJolt.Objects.UserStatus.html#GameJolt_Objects_UserStatus_Banned
+  commentId: F:GameJolt.Objects.UserStatus.Banned
+  fullName: GameJolt.Objects.UserStatus.Banned
+  nameWithType: UserStatus.Banned
+- uid: GameJolt.Objects.UserStatus.Undefined
+  name: Undefined
+  href: api/GameJolt.Objects.UserStatus.html#GameJolt_Objects_UserStatus_Undefined
+  commentId: F:GameJolt.Objects.UserStatus.Undefined
+  fullName: GameJolt.Objects.UserStatus.Undefined
+  nameWithType: UserStatus.Undefined
+- uid: GameJolt.Objects.UserType
+  name: UserType
+  href: api/GameJolt.Objects.UserType.html
+  commentId: T:GameJolt.Objects.UserType
+  fullName: GameJolt.Objects.UserType
+  nameWithType: UserType
+- uid: GameJolt.Objects.UserType.Admin
+  name: Admin
+  href: api/GameJolt.Objects.UserType.html#GameJolt_Objects_UserType_Admin
+  commentId: F:GameJolt.Objects.UserType.Admin
+  fullName: GameJolt.Objects.UserType.Admin
+  nameWithType: UserType.Admin
+- uid: GameJolt.Objects.UserType.Developer
+  name: Developer
+  href: api/GameJolt.Objects.UserType.html#GameJolt_Objects_UserType_Developer
+  commentId: F:GameJolt.Objects.UserType.Developer
+  fullName: GameJolt.Objects.UserType.Developer
+  nameWithType: UserType.Developer
+- uid: GameJolt.Objects.UserType.Moderator
+  name: Moderator
+  href: api/GameJolt.Objects.UserType.html#GameJolt_Objects_UserType_Moderator
+  commentId: F:GameJolt.Objects.UserType.Moderator
+  fullName: GameJolt.Objects.UserType.Moderator
+  nameWithType: UserType.Moderator
+- uid: GameJolt.Objects.UserType.Undefined
+  name: Undefined
+  href: api/GameJolt.Objects.UserType.html#GameJolt_Objects_UserType_Undefined
+  commentId: F:GameJolt.Objects.UserType.Undefined
+  fullName: GameJolt.Objects.UserType.Undefined
+  nameWithType: UserType.Undefined
+- uid: GameJolt.Objects.UserType.User
+  name: User
+  href: api/GameJolt.Objects.UserType.html#GameJolt_Objects_UserType_User
+  commentId: F:GameJolt.Objects.UserType.User
+  fullName: GameJolt.Objects.UserType.User
+  nameWithType: UserType.User
+- uid: GameJolt.Response
+  name: Response
+  href: api/GameJolt.Response.html
+  commentId: T:GameJolt.Response
+  fullName: GameJolt.Response
+  nameWithType: Response
+- uid: GameJolt.Response.Create*
+  name: Create
+  href: api/GameJolt.Response.html#GameJolt_Response_Create_
+  commentId: Overload:GameJolt.Response.Create
+  isSpec: "True"
+  fullName: GameJolt.Response.Create
+  nameWithType: Response.Create
+- uid: GameJolt.Response.Create``1(``0)
+  name: Create<T>(T)
+  href: api/GameJolt.Response.html#GameJolt_Response_Create__1___0_
+  commentId: M:GameJolt.Response.Create``1(``0)
+  name.vb: Create(Of T)(T)
+  fullName: GameJolt.Response.Create<T>(T)
+  fullName.vb: GameJolt.Response.Create(Of T)(T)
+  nameWithType: Response.Create<T>(T)
+  nameWithType.vb: Response.Create(Of T)(T)
+- uid: GameJolt.Response.Exception
+  name: Exception
+  href: api/GameJolt.Response.html#GameJolt_Response_Exception
+  commentId: P:GameJolt.Response.Exception
+  fullName: GameJolt.Response.Exception
+  nameWithType: Response.Exception
+- uid: GameJolt.Response.Exception*
+  name: Exception
+  href: api/GameJolt.Response.html#GameJolt_Response_Exception_
+  commentId: Overload:GameJolt.Response.Exception
+  isSpec: "True"
+  fullName: GameJolt.Response.Exception
+  nameWithType: Response.Exception
+- uid: GameJolt.Response.Failure(GameJolt.Response)
+  name: Failure(Response)
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure_GameJolt_Response_
+  commentId: M:GameJolt.Response.Failure(GameJolt.Response)
+  fullName: GameJolt.Response.Failure(GameJolt.Response)
+  nameWithType: Response.Failure(Response)
+- uid: GameJolt.Response.Failure(System.Exception)
+  name: Failure(Exception)
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure_System_Exception_
+  commentId: M:GameJolt.Response.Failure(System.Exception)
+  fullName: GameJolt.Response.Failure(System.Exception)
+  nameWithType: Response.Failure(Exception)
+- uid: GameJolt.Response.Failure(System.String)
+  name: Failure(String)
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure_System_String_
+  commentId: M:GameJolt.Response.Failure(System.String)
+  fullName: GameJolt.Response.Failure(System.String)
+  nameWithType: Response.Failure(String)
+- uid: GameJolt.Response.Failure*
+  name: Failure
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure_
+  commentId: Overload:GameJolt.Response.Failure
+  isSpec: "True"
+  fullName: GameJolt.Response.Failure
+  nameWithType: Response.Failure
+- uid: GameJolt.Response.Failure``1(GameJolt.Response)
+  name: Failure<T>(Response)
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure__1_GameJolt_Response_
+  commentId: M:GameJolt.Response.Failure``1(GameJolt.Response)
+  name.vb: Failure(Of T)(Response)
+  fullName: GameJolt.Response.Failure<T>(GameJolt.Response)
+  fullName.vb: GameJolt.Response.Failure(Of T)(GameJolt.Response)
+  nameWithType: Response.Failure<T>(Response)
+  nameWithType.vb: Response.Failure(Of T)(Response)
+- uid: GameJolt.Response.Failure``1(System.Exception)
+  name: Failure<T>(Exception)
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure__1_System_Exception_
+  commentId: M:GameJolt.Response.Failure``1(System.Exception)
+  name.vb: Failure(Of T)(Exception)
+  fullName: GameJolt.Response.Failure<T>(System.Exception)
+  fullName.vb: GameJolt.Response.Failure(Of T)(System.Exception)
+  nameWithType: Response.Failure<T>(Exception)
+  nameWithType.vb: Response.Failure(Of T)(Exception)
+- uid: GameJolt.Response.Failure``1(System.String)
+  name: Failure<T>(String)
+  href: api/GameJolt.Response.html#GameJolt_Response_Failure__1_System_String_
+  commentId: M:GameJolt.Response.Failure``1(System.String)
+  name.vb: Failure(Of T)(String)
+  fullName: GameJolt.Response.Failure<T>(System.String)
+  fullName.vb: GameJolt.Response.Failure(Of T)(System.String)
+  nameWithType: Response.Failure<T>(String)
+  nameWithType.vb: Response.Failure(Of T)(String)
+- uid: GameJolt.Response.Message
+  name: Message
+  href: api/GameJolt.Response.html#GameJolt_Response_Message
+  commentId: P:GameJolt.Response.Message
+  fullName: GameJolt.Response.Message
+  nameWithType: Response.Message
+- uid: GameJolt.Response.Message*
+  name: Message
+  href: api/GameJolt.Response.html#GameJolt_Response_Message_
+  commentId: Overload:GameJolt.Response.Message
+  isSpec: "True"
+  fullName: GameJolt.Response.Message
+  nameWithType: Response.Message
+- uid: GameJolt.Response.Success
+  name: Success
+  href: api/GameJolt.Response.html#GameJolt_Response_Success
+  commentId: P:GameJolt.Response.Success
+  fullName: GameJolt.Response.Success
+  nameWithType: Response.Success
+- uid: GameJolt.Response.Success*
+  name: Success
+  href: api/GameJolt.Response.html#GameJolt_Response_Success_
+  commentId: Overload:GameJolt.Response.Success
+  isSpec: "True"
+  fullName: GameJolt.Response.Success
+  nameWithType: Response.Success
+- uid: GameJolt.Response`1
+  name: Response<T>
+  href: api/GameJolt.Response-1.html
+  commentId: T:GameJolt.Response`1
+  name.vb: Response(Of T)
+  fullName: GameJolt.Response<T>
+  fullName.vb: GameJolt.Response(Of T)
+  nameWithType: Response<T>
+  nameWithType.vb: Response(Of T)
+- uid: GameJolt.Response`1.Data
+  name: Data
+  href: api/GameJolt.Response-1.html#GameJolt_Response_1_Data
+  commentId: P:GameJolt.Response`1.Data
+  fullName: GameJolt.Response<T>.Data
+  fullName.vb: GameJolt.Response(Of T).Data
+  nameWithType: Response<T>.Data
+  nameWithType.vb: Response(Of T).Data
+- uid: GameJolt.Response`1.Data*
+  name: Data
+  href: api/GameJolt.Response-1.html#GameJolt_Response_1_Data_
+  commentId: Overload:GameJolt.Response`1.Data
+  isSpec: "True"
+  fullName: GameJolt.Response<T>.Data
+  fullName.vb: GameJolt.Response(Of T).Data
+  nameWithType: Response<T>.Data
+  nameWithType.vb: Response(Of T).Data
+- uid: GameJolt.Services
+  name: GameJolt.Services
+  href: api/GameJolt.Services.html
+  commentId: N:GameJolt.Services
+  fullName: GameJolt.Services
+  nameWithType: GameJolt.Services
+- uid: GameJolt.Services.Datastore
+  name: Datastore
+  href: api/GameJolt.Services.Datastore.html
+  commentId: T:GameJolt.Services.Datastore
+  fullName: GameJolt.Services.Datastore
+  nameWithType: Datastore
+- uid: GameJolt.Services.Datastore.Fetch(System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.String}})
+  name: Fetch(String, Credentials, Action<Response<String>>)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Fetch_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_String___
+  commentId: M:GameJolt.Services.Datastore.Fetch(System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.String}})
+  name.vb: Fetch(String, Credentials, Action(Of Response(Of String)))
+  fullName: GameJolt.Services.Datastore.Fetch(System.String, GameJolt.Objects.Credentials, System.Action<GameJolt.Response<System.String>>)
+  fullName.vb: GameJolt.Services.Datastore.Fetch(System.String, GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response(Of System.String)))
+  nameWithType: Datastore.Fetch(String, Credentials, Action<Response<String>>)
+  nameWithType.vb: Datastore.Fetch(String, Credentials, Action(Of Response(Of String)))
+- uid: GameJolt.Services.Datastore.Fetch*
+  name: Fetch
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Fetch_
+  commentId: Overload:GameJolt.Services.Datastore.Fetch
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.Fetch
+  nameWithType: Datastore.Fetch
+- uid: GameJolt.Services.Datastore.FetchAsync(System.String,GameJolt.Objects.Credentials)
+  name: FetchAsync(String, Credentials)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_FetchAsync_System_String_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Datastore.FetchAsync(System.String,GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Datastore.FetchAsync(System.String, GameJolt.Objects.Credentials)
+  nameWithType: Datastore.FetchAsync(String, Credentials)
+- uid: GameJolt.Services.Datastore.FetchAsync*
+  name: FetchAsync
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_FetchAsync_
+  commentId: Overload:GameJolt.Services.Datastore.FetchAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.FetchAsync
+  nameWithType: Datastore.FetchAsync
+- uid: GameJolt.Services.Datastore.GetKeys(GameJolt.Objects.Credentials,System.String,System.Action{GameJolt.Response{System.String[]}})
+  name: GetKeys(Credentials, String, Action<Response<String[]>>)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_GetKeys_GameJolt_Objects_Credentials_System_String_System_Action_GameJolt_Response_System_String_____
+  commentId: M:GameJolt.Services.Datastore.GetKeys(GameJolt.Objects.Credentials,System.String,System.Action{GameJolt.Response{System.String[]}})
+  name.vb: GetKeys(Credentials, String, Action(Of Response(Of String())))
+  fullName: GameJolt.Services.Datastore.GetKeys(GameJolt.Objects.Credentials, System.String, System.Action<GameJolt.Response<System.String[]>>)
+  fullName.vb: GameJolt.Services.Datastore.GetKeys(GameJolt.Objects.Credentials, System.String, System.Action(Of GameJolt.Response(Of System.String())))
+  nameWithType: Datastore.GetKeys(Credentials, String, Action<Response<String[]>>)
+  nameWithType.vb: Datastore.GetKeys(Credentials, String, Action(Of Response(Of String())))
+- uid: GameJolt.Services.Datastore.GetKeys*
+  name: GetKeys
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_GetKeys_
+  commentId: Overload:GameJolt.Services.Datastore.GetKeys
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.GetKeys
+  nameWithType: Datastore.GetKeys
+- uid: GameJolt.Services.Datastore.GetKeysAsync(GameJolt.Objects.Credentials,System.String)
+  name: GetKeysAsync(Credentials, String)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_GetKeysAsync_GameJolt_Objects_Credentials_System_String_
+  commentId: M:GameJolt.Services.Datastore.GetKeysAsync(GameJolt.Objects.Credentials,System.String)
+  fullName: GameJolt.Services.Datastore.GetKeysAsync(GameJolt.Objects.Credentials, System.String)
+  nameWithType: Datastore.GetKeysAsync(Credentials, String)
+- uid: GameJolt.Services.Datastore.GetKeysAsync*
+  name: GetKeysAsync
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_GetKeysAsync_
+  commentId: Overload:GameJolt.Services.Datastore.GetKeysAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.GetKeysAsync
+  nameWithType: Datastore.GetKeysAsync
+- uid: GameJolt.Services.Datastore.Remove(System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name: Remove(String, Credentials, Action<Response>)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Remove_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Datastore.Remove(System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name.vb: Remove(String, Credentials, Action(Of Response))
+  fullName: GameJolt.Services.Datastore.Remove(System.String, GameJolt.Objects.Credentials, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Datastore.Remove(System.String, GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response))
+  nameWithType: Datastore.Remove(String, Credentials, Action<Response>)
+  nameWithType.vb: Datastore.Remove(String, Credentials, Action(Of Response))
+- uid: GameJolt.Services.Datastore.Remove*
+  name: Remove
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Remove_
+  commentId: Overload:GameJolt.Services.Datastore.Remove
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.Remove
+  nameWithType: Datastore.Remove
+- uid: GameJolt.Services.Datastore.RemoveAsync(System.String,GameJolt.Objects.Credentials)
+  name: RemoveAsync(String, Credentials)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_RemoveAsync_System_String_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Datastore.RemoveAsync(System.String,GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Datastore.RemoveAsync(System.String, GameJolt.Objects.Credentials)
+  nameWithType: Datastore.RemoveAsync(String, Credentials)
+- uid: GameJolt.Services.Datastore.RemoveAsync*
+  name: RemoveAsync
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_RemoveAsync_
+  commentId: Overload:GameJolt.Services.Datastore.RemoveAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.RemoveAsync
+  nameWithType: Datastore.RemoveAsync
+- uid: GameJolt.Services.Datastore.Set(System.String,System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name: Set(String, String, Credentials, Action<Response>)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Set_System_String_System_String_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Datastore.Set(System.String,System.String,GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name.vb: Set(String, String, Credentials, Action(Of Response))
+  fullName: GameJolt.Services.Datastore.Set(System.String, System.String, GameJolt.Objects.Credentials, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Datastore.Set(System.String, System.String, GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response))
+  nameWithType: Datastore.Set(String, String, Credentials, Action<Response>)
+  nameWithType.vb: Datastore.Set(String, String, Credentials, Action(Of Response))
+- uid: GameJolt.Services.Datastore.Set*
+  name: Set
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Set_
+  commentId: Overload:GameJolt.Services.Datastore.Set
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.Set
+  nameWithType: Datastore.Set
+- uid: GameJolt.Services.Datastore.SetAsync(System.String,System.String,GameJolt.Objects.Credentials)
+  name: SetAsync(String, String, Credentials)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_SetAsync_System_String_System_String_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Datastore.SetAsync(System.String,System.String,GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Datastore.SetAsync(System.String, System.String, GameJolt.Objects.Credentials)
+  nameWithType: Datastore.SetAsync(String, String, Credentials)
+- uid: GameJolt.Services.Datastore.SetAsync*
+  name: SetAsync
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_SetAsync_
+  commentId: Overload:GameJolt.Services.Datastore.SetAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.SetAsync
+  nameWithType: Datastore.SetAsync
+- uid: GameJolt.Services.Datastore.Update(System.String,System.String,GameJolt.Services.DatastoreOperation,GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.String}})
+  name: Update(String, String, DatastoreOperation, Credentials, Action<Response<String>>)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Update_System_String_System_String_GameJolt_Services_DatastoreOperation_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_String___
+  commentId: M:GameJolt.Services.Datastore.Update(System.String,System.String,GameJolt.Services.DatastoreOperation,GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.String}})
+  name.vb: Update(String, String, DatastoreOperation, Credentials, Action(Of Response(Of String)))
+  fullName: GameJolt.Services.Datastore.Update(System.String, System.String, GameJolt.Services.DatastoreOperation, GameJolt.Objects.Credentials, System.Action<GameJolt.Response<System.String>>)
+  fullName.vb: GameJolt.Services.Datastore.Update(System.String, System.String, GameJolt.Services.DatastoreOperation, GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response(Of System.String)))
+  nameWithType: Datastore.Update(String, String, DatastoreOperation, Credentials, Action<Response<String>>)
+  nameWithType.vb: Datastore.Update(String, String, DatastoreOperation, Credentials, Action(Of Response(Of String)))
+- uid: GameJolt.Services.Datastore.Update*
+  name: Update
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_Update_
+  commentId: Overload:GameJolt.Services.Datastore.Update
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.Update
+  nameWithType: Datastore.Update
+- uid: GameJolt.Services.Datastore.UpdateAsync(System.String,System.String,GameJolt.Services.DatastoreOperation,GameJolt.Objects.Credentials)
+  name: UpdateAsync(String, String, DatastoreOperation, Credentials)
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_UpdateAsync_System_String_System_String_GameJolt_Services_DatastoreOperation_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Datastore.UpdateAsync(System.String,System.String,GameJolt.Services.DatastoreOperation,GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Datastore.UpdateAsync(System.String, System.String, GameJolt.Services.DatastoreOperation, GameJolt.Objects.Credentials)
+  nameWithType: Datastore.UpdateAsync(String, String, DatastoreOperation, Credentials)
+- uid: GameJolt.Services.Datastore.UpdateAsync*
+  name: UpdateAsync
+  href: api/GameJolt.Services.Datastore.html#GameJolt_Services_Datastore_UpdateAsync_
+  commentId: Overload:GameJolt.Services.Datastore.UpdateAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Datastore.UpdateAsync
+  nameWithType: Datastore.UpdateAsync
+- uid: GameJolt.Services.DatastoreOperation
+  name: DatastoreOperation
+  href: api/GameJolt.Services.DatastoreOperation.html
+  commentId: T:GameJolt.Services.DatastoreOperation
+  fullName: GameJolt.Services.DatastoreOperation
+  nameWithType: DatastoreOperation
+- uid: GameJolt.Services.DatastoreOperation.Add
+  name: Add
+  href: api/GameJolt.Services.DatastoreOperation.html#GameJolt_Services_DatastoreOperation_Add
+  commentId: F:GameJolt.Services.DatastoreOperation.Add
+  fullName: GameJolt.Services.DatastoreOperation.Add
+  nameWithType: DatastoreOperation.Add
+- uid: GameJolt.Services.DatastoreOperation.Append
+  name: Append
+  href: api/GameJolt.Services.DatastoreOperation.html#GameJolt_Services_DatastoreOperation_Append
+  commentId: F:GameJolt.Services.DatastoreOperation.Append
+  fullName: GameJolt.Services.DatastoreOperation.Append
+  nameWithType: DatastoreOperation.Append
+- uid: GameJolt.Services.DatastoreOperation.Divide
+  name: Divide
+  href: api/GameJolt.Services.DatastoreOperation.html#GameJolt_Services_DatastoreOperation_Divide
+  commentId: F:GameJolt.Services.DatastoreOperation.Divide
+  fullName: GameJolt.Services.DatastoreOperation.Divide
+  nameWithType: DatastoreOperation.Divide
+- uid: GameJolt.Services.DatastoreOperation.Multiply
+  name: Multiply
+  href: api/GameJolt.Services.DatastoreOperation.html#GameJolt_Services_DatastoreOperation_Multiply
+  commentId: F:GameJolt.Services.DatastoreOperation.Multiply
+  fullName: GameJolt.Services.DatastoreOperation.Multiply
+  nameWithType: DatastoreOperation.Multiply
+- uid: GameJolt.Services.DatastoreOperation.Prepend
+  name: Prepend
+  href: api/GameJolt.Services.DatastoreOperation.html#GameJolt_Services_DatastoreOperation_Prepend
+  commentId: F:GameJolt.Services.DatastoreOperation.Prepend
+  fullName: GameJolt.Services.DatastoreOperation.Prepend
+  nameWithType: DatastoreOperation.Prepend
+- uid: GameJolt.Services.DatastoreOperation.Subtract
+  name: Subtract
+  href: api/GameJolt.Services.DatastoreOperation.html#GameJolt_Services_DatastoreOperation_Subtract
+  commentId: F:GameJolt.Services.DatastoreOperation.Subtract
+  fullName: GameJolt.Services.DatastoreOperation.Subtract
+  nameWithType: DatastoreOperation.Subtract
+- uid: GameJolt.Services.Friends
+  name: Friends
+  href: api/GameJolt.Services.Friends.html
+  commentId: T:GameJolt.Services.Friends
+  fullName: GameJolt.Services.Friends
+  nameWithType: Friends
+- uid: GameJolt.Services.Friends.Fetch(GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.Int32[]}})
+  name: Fetch(Credentials, Action<Response<Int32[]>>)
+  href: api/GameJolt.Services.Friends.html#GameJolt_Services_Friends_Fetch_GameJolt_Objects_Credentials_System_Action_GameJolt_Response_System_Int32_____
+  commentId: M:GameJolt.Services.Friends.Fetch(GameJolt.Objects.Credentials,System.Action{GameJolt.Response{System.Int32[]}})
+  name.vb: Fetch(Credentials, Action(Of Response(Of Int32())))
+  fullName: GameJolt.Services.Friends.Fetch(GameJolt.Objects.Credentials, System.Action<GameJolt.Response<System.Int32[]>>)
+  fullName.vb: GameJolt.Services.Friends.Fetch(GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response(Of System.Int32())))
+  nameWithType: Friends.Fetch(Credentials, Action<Response<Int32[]>>)
+  nameWithType.vb: Friends.Fetch(Credentials, Action(Of Response(Of Int32())))
+- uid: GameJolt.Services.Friends.Fetch*
+  name: Fetch
+  href: api/GameJolt.Services.Friends.html#GameJolt_Services_Friends_Fetch_
+  commentId: Overload:GameJolt.Services.Friends.Fetch
+  isSpec: "True"
+  fullName: GameJolt.Services.Friends.Fetch
+  nameWithType: Friends.Fetch
+- uid: GameJolt.Services.Friends.FetchAsync(GameJolt.Objects.Credentials)
+  name: FetchAsync(Credentials)
+  href: api/GameJolt.Services.Friends.html#GameJolt_Services_Friends_FetchAsync_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Friends.FetchAsync(GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Friends.FetchAsync(GameJolt.Objects.Credentials)
+  nameWithType: Friends.FetchAsync(Credentials)
+- uid: GameJolt.Services.Friends.FetchAsync*
+  name: FetchAsync
+  href: api/GameJolt.Services.Friends.html#GameJolt_Services_Friends_FetchAsync_
+  commentId: Overload:GameJolt.Services.Friends.FetchAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Friends.FetchAsync
+  nameWithType: Friends.FetchAsync
+- uid: GameJolt.Services.Scores
+  name: Scores
+  href: api/GameJolt.Services.Scores.html
+  commentId: T:GameJolt.Services.Scores
+  fullName: GameJolt.Services.Scores
+  nameWithType: Scores
+- uid: GameJolt.Services.Scores.Add(GameJolt.Objects.Credentials,System.Int32,System.String,System.String,System.Int32,System.Action{GameJolt.Response})
+  name: Add(Credentials, Int32, String, String, Int32, Action<Response>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Add_GameJolt_Objects_Credentials_System_Int32_System_String_System_String_System_Int32_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Scores.Add(GameJolt.Objects.Credentials,System.Int32,System.String,System.String,System.Int32,System.Action{GameJolt.Response})
+  name.vb: Add(Credentials, Int32, String, String, Int32, Action(Of Response))
+  fullName: GameJolt.Services.Scores.Add(GameJolt.Objects.Credentials, System.Int32, System.String, System.String, System.Int32, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Scores.Add(GameJolt.Objects.Credentials, System.Int32, System.String, System.String, System.Int32, System.Action(Of GameJolt.Response))
+  nameWithType: Scores.Add(Credentials, Int32, String, String, Int32, Action<Response>)
+  nameWithType.vb: Scores.Add(Credentials, Int32, String, String, Int32, Action(Of Response))
+- uid: GameJolt.Services.Scores.Add(System.String,System.Int32,System.String,System.String,System.Int32,System.Action{GameJolt.Response})
+  name: Add(String, Int32, String, String, Int32, Action<Response>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Add_System_String_System_Int32_System_String_System_String_System_Int32_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Scores.Add(System.String,System.Int32,System.String,System.String,System.Int32,System.Action{GameJolt.Response})
+  name.vb: Add(String, Int32, String, String, Int32, Action(Of Response))
+  fullName: GameJolt.Services.Scores.Add(System.String, System.Int32, System.String, System.String, System.Int32, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Scores.Add(System.String, System.Int32, System.String, System.String, System.Int32, System.Action(Of GameJolt.Response))
+  nameWithType: Scores.Add(String, Int32, String, String, Int32, Action<Response>)
+  nameWithType.vb: Scores.Add(String, Int32, String, String, Int32, Action(Of Response))
+- uid: GameJolt.Services.Scores.Add*
+  name: Add
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Add_
+  commentId: Overload:GameJolt.Services.Scores.Add
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.Add
+  nameWithType: Scores.Add
+- uid: GameJolt.Services.Scores.AddAsync(GameJolt.Objects.Credentials,System.Int32,System.String,System.String,System.Int32)
+  name: AddAsync(Credentials, Int32, String, String, Int32)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_AddAsync_GameJolt_Objects_Credentials_System_Int32_System_String_System_String_System_Int32_
+  commentId: M:GameJolt.Services.Scores.AddAsync(GameJolt.Objects.Credentials,System.Int32,System.String,System.String,System.Int32)
+  fullName: GameJolt.Services.Scores.AddAsync(GameJolt.Objects.Credentials, System.Int32, System.String, System.String, System.Int32)
+  nameWithType: Scores.AddAsync(Credentials, Int32, String, String, Int32)
+- uid: GameJolt.Services.Scores.AddAsync(System.String,System.Int32,System.String,System.String,System.Int32)
+  name: AddAsync(String, Int32, String, String, Int32)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_AddAsync_System_String_System_Int32_System_String_System_String_System_Int32_
+  commentId: M:GameJolt.Services.Scores.AddAsync(System.String,System.Int32,System.String,System.String,System.Int32)
+  fullName: GameJolt.Services.Scores.AddAsync(System.String, System.Int32, System.String, System.String, System.Int32)
+  nameWithType: Scores.AddAsync(String, Int32, String, String, Int32)
+- uid: GameJolt.Services.Scores.AddAsync*
+  name: AddAsync
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_AddAsync_
+  commentId: Overload:GameJolt.Services.Scores.AddAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.AddAsync
+  nameWithType: Scores.AddAsync
+- uid: GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Action{GameJolt.Response{GameJolt.Objects.Score[]}})
+  name: Fetch(Credentials, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Action<Response<Score[]>>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Fetch_GameJolt_Objects_Credentials_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Action_GameJolt_Response_GameJolt_Objects_Score_____
+  commentId: M:GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Action{GameJolt.Response{GameJolt.Objects.Score[]}})
+  name.vb: Fetch(Credentials, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Action(Of Response(Of Score())))
+  fullName: GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Action<GameJolt.Response<GameJolt.Objects.Score[]>>)
+  fullName.vb: GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Action(Of GameJolt.Response(Of GameJolt.Objects.Score())))
+  nameWithType: Scores.Fetch(Credentials, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Action<Response<Score[]>>)
+  nameWithType.vb: Scores.Fetch(Credentials, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Action(Of Response(Of Score())))
+- uid: GameJolt.Services.Scores.Fetch*
+  name: Fetch
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Fetch_
+  commentId: Overload:GameJolt.Services.Scores.Fetch
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.Fetch
+  nameWithType: Scores.Fetch
+- uid: GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: FetchAsync(Credentials, Int32, Int32, Nullable<Int32>, Nullable<Int32>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchAsync_GameJolt_Objects_Credentials_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: FetchAsync(Credentials, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
+  fullName: GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: Scores.FetchAsync(Credentials, Int32, Int32, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: Scores.FetchAsync(Credentials, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
+- uid: GameJolt.Services.Scores.FetchAsync*
+  name: FetchAsync
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchAsync_
+  commentId: Overload:GameJolt.Services.Scores.FetchAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.FetchAsync
+  nameWithType: Scores.FetchAsync
+- uid: GameJolt.Services.Scores.FetchTables(System.Action{GameJolt.Response{GameJolt.Objects.Table[]}})
+  name: FetchTables(Action<Response<Table[]>>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchTables_System_Action_GameJolt_Response_GameJolt_Objects_Table_____
+  commentId: M:GameJolt.Services.Scores.FetchTables(System.Action{GameJolt.Response{GameJolt.Objects.Table[]}})
+  name.vb: FetchTables(Action(Of Response(Of Table())))
+  fullName: GameJolt.Services.Scores.FetchTables(System.Action<GameJolt.Response<GameJolt.Objects.Table[]>>)
+  fullName.vb: GameJolt.Services.Scores.FetchTables(System.Action(Of GameJolt.Response(Of GameJolt.Objects.Table())))
+  nameWithType: Scores.FetchTables(Action<Response<Table[]>>)
+  nameWithType.vb: Scores.FetchTables(Action(Of Response(Of Table())))
+- uid: GameJolt.Services.Scores.FetchTables*
+  name: FetchTables
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchTables_
+  commentId: Overload:GameJolt.Services.Scores.FetchTables
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.FetchTables
+  nameWithType: Scores.FetchTables
+- uid: GameJolt.Services.Scores.FetchTablesAsync
+  name: FetchTablesAsync()
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchTablesAsync
+  commentId: M:GameJolt.Services.Scores.FetchTablesAsync
+  fullName: GameJolt.Services.Scores.FetchTablesAsync()
+  nameWithType: Scores.FetchTablesAsync()
+- uid: GameJolt.Services.Scores.FetchTablesAsync*
+  name: FetchTablesAsync
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchTablesAsync_
+  commentId: Overload:GameJolt.Services.Scores.FetchTablesAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.FetchTablesAsync
+  nameWithType: Scores.FetchTablesAsync
+- uid: GameJolt.Services.Scores.GetRank(System.Int32,System.Int32,System.Action{GameJolt.Response{System.Int32}})
+  name: GetRank(Int32, Int32, Action<Response<Int32>>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_GetRank_System_Int32_System_Int32_System_Action_GameJolt_Response_System_Int32___
+  commentId: M:GameJolt.Services.Scores.GetRank(System.Int32,System.Int32,System.Action{GameJolt.Response{System.Int32}})
+  name.vb: GetRank(Int32, Int32, Action(Of Response(Of Int32)))
+  fullName: GameJolt.Services.Scores.GetRank(System.Int32, System.Int32, System.Action<GameJolt.Response<System.Int32>>)
+  fullName.vb: GameJolt.Services.Scores.GetRank(System.Int32, System.Int32, System.Action(Of GameJolt.Response(Of System.Int32)))
+  nameWithType: Scores.GetRank(Int32, Int32, Action<Response<Int32>>)
+  nameWithType.vb: Scores.GetRank(Int32, Int32, Action(Of Response(Of Int32)))
+- uid: GameJolt.Services.Scores.GetRank*
+  name: GetRank
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_GetRank_
+  commentId: Overload:GameJolt.Services.Scores.GetRank
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.GetRank
+  nameWithType: Scores.GetRank
+- uid: GameJolt.Services.Scores.GetRankAsync(System.Int32,System.Int32)
+  name: GetRankAsync(Int32, Int32)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_GetRankAsync_System_Int32_System_Int32_
+  commentId: M:GameJolt.Services.Scores.GetRankAsync(System.Int32,System.Int32)
+  fullName: GameJolt.Services.Scores.GetRankAsync(System.Int32, System.Int32)
+  nameWithType: Scores.GetRankAsync(Int32, Int32)
+- uid: GameJolt.Services.Scores.GetRankAsync*
+  name: GetRankAsync
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_GetRankAsync_
+  commentId: Overload:GameJolt.Services.Scores.GetRankAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Scores.GetRankAsync
+  nameWithType: Scores.GetRankAsync
+- uid: GameJolt.Services.Service
+  name: Service
+  href: api/GameJolt.Services.Service.html
+  commentId: T:GameJolt.Services.Service
+  fullName: GameJolt.Services.Service
+  nameWithType: Service
+- uid: GameJolt.Services.Service.#ctor(GameJolt.GameJoltApi)
+  name: Service(GameJoltApi)
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service__ctor_GameJolt_GameJoltApi_
+  commentId: M:GameJolt.Services.Service.#ctor(GameJolt.GameJoltApi)
+  fullName: GameJolt.Services.Service.Service(GameJolt.GameJoltApi)
+  nameWithType: Service.Service(GameJoltApi)
+- uid: GameJolt.Services.Service.#ctor*
+  name: Service
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service__ctor_
+  commentId: Overload:GameJolt.Services.Service.#ctor
+  isSpec: "True"
+  fullName: GameJolt.Services.Service.Service
+  nameWithType: Service.Service
+- uid: GameJolt.Services.Service.Api
+  name: Api
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service_Api
+  commentId: P:GameJolt.Services.Service.Api
+  fullName: GameJolt.Services.Service.Api
+  nameWithType: Service.Api
+- uid: GameJolt.Services.Service.Api*
+  name: Api
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service_Api_
+  commentId: Overload:GameJolt.Services.Service.Api
+  isSpec: "True"
+  fullName: GameJolt.Services.Service.Api
+  nameWithType: Service.Api
+- uid: GameJolt.Services.Service.Wrap(System.Threading.Tasks.Task{GameJolt.Response},System.Action{GameJolt.Response})
+  name: Wrap(Task<Response>, Action<Response>)
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap_System_Threading_Tasks_Task_GameJolt_Response__System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Service.Wrap(System.Threading.Tasks.Task{GameJolt.Response},System.Action{GameJolt.Response})
+  name.vb: Wrap(Task(Of Response), Action(Of Response))
+  fullName: GameJolt.Services.Service.Wrap(System.Threading.Tasks.Task<GameJolt.Response>, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Service.Wrap(System.Threading.Tasks.Task(Of GameJolt.Response), System.Action(Of GameJolt.Response))
+  nameWithType: Service.Wrap(Task<Response>, Action<Response>)
+  nameWithType.vb: Service.Wrap(Task(Of Response), Action(Of Response))
+- uid: GameJolt.Services.Service.Wrap*
+  name: Wrap
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap_
+  commentId: Overload:GameJolt.Services.Service.Wrap
+  isSpec: "True"
+  fullName: GameJolt.Services.Service.Wrap
+  nameWithType: Service.Wrap
+- uid: GameJolt.Services.Service.Wrap``1(System.Threading.Tasks.Task{GameJolt.Response{``0}},System.Action{GameJolt.Response{``0}})
+  name: Wrap<T>(Task<Response<T>>, Action<Response<T>>)
+  href: api/GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap__1_System_Threading_Tasks_Task_GameJolt_Response___0___System_Action_GameJolt_Response___0___
+  commentId: M:GameJolt.Services.Service.Wrap``1(System.Threading.Tasks.Task{GameJolt.Response{``0}},System.Action{GameJolt.Response{``0}})
+  name.vb: Wrap(Of T)(Task(Of Response(Of T)), Action(Of Response(Of T)))
+  fullName: GameJolt.Services.Service.Wrap<T>(System.Threading.Tasks.Task<GameJolt.Response<T>>, System.Action<GameJolt.Response<T>>)
+  fullName.vb: GameJolt.Services.Service.Wrap(Of T)(System.Threading.Tasks.Task(Of GameJolt.Response(Of T)), System.Action(Of GameJolt.Response(Of T)))
+  nameWithType: Service.Wrap<T>(Task<Response<T>>, Action<Response<T>>)
+  nameWithType.vb: Service.Wrap(Of T)(Task(Of Response(Of T)), Action(Of Response(Of T)))
+- uid: GameJolt.Services.Sessions
+  name: Sessions
+  href: api/GameJolt.Services.Sessions.html
+  commentId: T:GameJolt.Services.Sessions
+  fullName: GameJolt.Services.Sessions
+  nameWithType: Sessions
+- uid: GameJolt.Services.Sessions.Check(GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name: Check(Credentials, Action<Response>)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Check_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Sessions.Check(GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name.vb: Check(Credentials, Action(Of Response))
+  fullName: GameJolt.Services.Sessions.Check(GameJolt.Objects.Credentials, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Sessions.Check(GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response))
+  nameWithType: Sessions.Check(Credentials, Action<Response>)
+  nameWithType.vb: Sessions.Check(Credentials, Action(Of Response))
+- uid: GameJolt.Services.Sessions.Check*
+  name: Check
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Check_
+  commentId: Overload:GameJolt.Services.Sessions.Check
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.Check
+  nameWithType: Sessions.Check
+- uid: GameJolt.Services.Sessions.CheckAsync(GameJolt.Objects.Credentials)
+  name: CheckAsync(Credentials)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_CheckAsync_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Sessions.CheckAsync(GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Sessions.CheckAsync(GameJolt.Objects.Credentials)
+  nameWithType: Sessions.CheckAsync(Credentials)
+- uid: GameJolt.Services.Sessions.CheckAsync*
+  name: CheckAsync
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_CheckAsync_
+  commentId: Overload:GameJolt.Services.Sessions.CheckAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.CheckAsync
+  nameWithType: Sessions.CheckAsync
+- uid: GameJolt.Services.Sessions.Close(GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name: Close(Credentials, Action<Response>)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Close_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Sessions.Close(GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name.vb: Close(Credentials, Action(Of Response))
+  fullName: GameJolt.Services.Sessions.Close(GameJolt.Objects.Credentials, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Sessions.Close(GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response))
+  nameWithType: Sessions.Close(Credentials, Action<Response>)
+  nameWithType.vb: Sessions.Close(Credentials, Action(Of Response))
+- uid: GameJolt.Services.Sessions.Close*
+  name: Close
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Close_
+  commentId: Overload:GameJolt.Services.Sessions.Close
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.Close
+  nameWithType: Sessions.Close
+- uid: GameJolt.Services.Sessions.CloseAsync(GameJolt.Objects.Credentials)
+  name: CloseAsync(Credentials)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_CloseAsync_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Sessions.CloseAsync(GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Sessions.CloseAsync(GameJolt.Objects.Credentials)
+  nameWithType: Sessions.CloseAsync(Credentials)
+- uid: GameJolt.Services.Sessions.CloseAsync*
+  name: CloseAsync
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_CloseAsync_
+  commentId: Overload:GameJolt.Services.Sessions.CloseAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.CloseAsync
+  nameWithType: Sessions.CloseAsync
+- uid: GameJolt.Services.Sessions.Open(GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name: Open(Credentials, Action<Response>)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Open_GameJolt_Objects_Credentials_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Sessions.Open(GameJolt.Objects.Credentials,System.Action{GameJolt.Response})
+  name.vb: Open(Credentials, Action(Of Response))
+  fullName: GameJolt.Services.Sessions.Open(GameJolt.Objects.Credentials, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Sessions.Open(GameJolt.Objects.Credentials, System.Action(Of GameJolt.Response))
+  nameWithType: Sessions.Open(Credentials, Action<Response>)
+  nameWithType.vb: Sessions.Open(Credentials, Action(Of Response))
+- uid: GameJolt.Services.Sessions.Open*
+  name: Open
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Open_
+  commentId: Overload:GameJolt.Services.Sessions.Open
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.Open
+  nameWithType: Sessions.Open
+- uid: GameJolt.Services.Sessions.OpenAsync(GameJolt.Objects.Credentials)
+  name: OpenAsync(Credentials)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_OpenAsync_GameJolt_Objects_Credentials_
+  commentId: M:GameJolt.Services.Sessions.OpenAsync(GameJolt.Objects.Credentials)
+  fullName: GameJolt.Services.Sessions.OpenAsync(GameJolt.Objects.Credentials)
+  nameWithType: Sessions.OpenAsync(Credentials)
+- uid: GameJolt.Services.Sessions.OpenAsync*
+  name: OpenAsync
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_OpenAsync_
+  commentId: Overload:GameJolt.Services.Sessions.OpenAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.OpenAsync
+  nameWithType: Sessions.OpenAsync
+- uid: GameJolt.Services.Sessions.Ping(GameJolt.Objects.Credentials,System.Boolean,System.Action{GameJolt.Response})
+  name: Ping(Credentials, Boolean, Action<Response>)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Ping_GameJolt_Objects_Credentials_System_Boolean_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Sessions.Ping(GameJolt.Objects.Credentials,System.Boolean,System.Action{GameJolt.Response})
+  name.vb: Ping(Credentials, Boolean, Action(Of Response))
+  fullName: GameJolt.Services.Sessions.Ping(GameJolt.Objects.Credentials, System.Boolean, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Sessions.Ping(GameJolt.Objects.Credentials, System.Boolean, System.Action(Of GameJolt.Response))
+  nameWithType: Sessions.Ping(Credentials, Boolean, Action<Response>)
+  nameWithType.vb: Sessions.Ping(Credentials, Boolean, Action(Of Response))
+- uid: GameJolt.Services.Sessions.Ping*
+  name: Ping
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_Ping_
+  commentId: Overload:GameJolt.Services.Sessions.Ping
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.Ping
+  nameWithType: Sessions.Ping
+- uid: GameJolt.Services.Sessions.PingAsync(GameJolt.Objects.Credentials,System.Boolean)
+  name: PingAsync(Credentials, Boolean)
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_PingAsync_GameJolt_Objects_Credentials_System_Boolean_
+  commentId: M:GameJolt.Services.Sessions.PingAsync(GameJolt.Objects.Credentials,System.Boolean)
+  fullName: GameJolt.Services.Sessions.PingAsync(GameJolt.Objects.Credentials, System.Boolean)
+  nameWithType: Sessions.PingAsync(Credentials, Boolean)
+- uid: GameJolt.Services.Sessions.PingAsync*
+  name: PingAsync
+  href: api/GameJolt.Services.Sessions.html#GameJolt_Services_Sessions_PingAsync_
+  commentId: Overload:GameJolt.Services.Sessions.PingAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Sessions.PingAsync
+  nameWithType: Sessions.PingAsync
+- uid: GameJolt.Services.Time
+  name: Time
+  href: api/GameJolt.Services.Time.html
+  commentId: T:GameJolt.Services.Time
+  fullName: GameJolt.Services.Time
+  nameWithType: Time
+- uid: GameJolt.Services.Time.Get(System.Action{GameJolt.Response{System.DateTime}})
+  name: Get(Action<Response<DateTime>>)
+  href: api/GameJolt.Services.Time.html#GameJolt_Services_Time_Get_System_Action_GameJolt_Response_System_DateTime___
+  commentId: M:GameJolt.Services.Time.Get(System.Action{GameJolt.Response{System.DateTime}})
+  name.vb: Get(Action(Of Response(Of DateTime)))
+  fullName: GameJolt.Services.Time.Get(System.Action<GameJolt.Response<System.DateTime>>)
+  fullName.vb: GameJolt.Services.Time.Get(System.Action(Of GameJolt.Response(Of System.DateTime)))
+  nameWithType: Time.Get(Action<Response<DateTime>>)
+  nameWithType.vb: Time.Get(Action(Of Response(Of DateTime)))
+- uid: GameJolt.Services.Time.Get*
+  name: Get
+  href: api/GameJolt.Services.Time.html#GameJolt_Services_Time_Get_
+  commentId: Overload:GameJolt.Services.Time.Get
+  isSpec: "True"
+  fullName: GameJolt.Services.Time.Get
+  nameWithType: Time.Get
+- uid: GameJolt.Services.Time.GetAsync
+  name: GetAsync()
+  href: api/GameJolt.Services.Time.html#GameJolt_Services_Time_GetAsync
+  commentId: M:GameJolt.Services.Time.GetAsync
+  fullName: GameJolt.Services.Time.GetAsync()
+  nameWithType: Time.GetAsync()
+- uid: GameJolt.Services.Time.GetAsync*
+  name: GetAsync
+  href: api/GameJolt.Services.Time.html#GameJolt_Services_Time_GetAsync_
+  commentId: Overload:GameJolt.Services.Time.GetAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Time.GetAsync
+  nameWithType: Time.GetAsync
+- uid: GameJolt.Services.Time.GetTimeZone(System.String)
+  name: GetTimeZone(String)
+  href: api/GameJolt.Services.Time.html#GameJolt_Services_Time_GetTimeZone_System_String_
+  commentId: M:GameJolt.Services.Time.GetTimeZone(System.String)
+  fullName: GameJolt.Services.Time.GetTimeZone(System.String)
+  nameWithType: Time.GetTimeZone(String)
+- uid: GameJolt.Services.Time.GetTimeZone*
+  name: GetTimeZone
+  href: api/GameJolt.Services.Time.html#GameJolt_Services_Time_GetTimeZone_
+  commentId: Overload:GameJolt.Services.Time.GetTimeZone
+  isSpec: "True"
+  fullName: GameJolt.Services.Time.GetTimeZone
+  nameWithType: Time.GetTimeZone
+- uid: GameJolt.Services.Trophies
+  name: Trophies
+  href: api/GameJolt.Services.Trophies.html
+  commentId: T:GameJolt.Services.Trophies
+  fullName: GameJolt.Services.Trophies
+  nameWithType: Trophies
+- uid: GameJolt.Services.Trophies.Fetch(GameJolt.Objects.Credentials,System.Nullable{System.Boolean},System.Int32[],System.Action{GameJolt.Response{GameJolt.Objects.Trophy[]}})
+  name: Fetch(Credentials, Nullable<Boolean>, Int32[], Action<Response<Trophy[]>>)
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_Fetch_GameJolt_Objects_Credentials_System_Nullable_System_Boolean__System_Int32___System_Action_GameJolt_Response_GameJolt_Objects_Trophy_____
+  commentId: M:GameJolt.Services.Trophies.Fetch(GameJolt.Objects.Credentials,System.Nullable{System.Boolean},System.Int32[],System.Action{GameJolt.Response{GameJolt.Objects.Trophy[]}})
+  name.vb: Fetch(Credentials, Nullable(Of Boolean), Int32(), Action(Of Response(Of Trophy())))
+  fullName: GameJolt.Services.Trophies.Fetch(GameJolt.Objects.Credentials, System.Nullable<System.Boolean>, System.Int32[], System.Action<GameJolt.Response<GameJolt.Objects.Trophy[]>>)
+  fullName.vb: GameJolt.Services.Trophies.Fetch(GameJolt.Objects.Credentials, System.Nullable(Of System.Boolean), System.Int32(), System.Action(Of GameJolt.Response(Of GameJolt.Objects.Trophy())))
+  nameWithType: Trophies.Fetch(Credentials, Nullable<Boolean>, Int32[], Action<Response<Trophy[]>>)
+  nameWithType.vb: Trophies.Fetch(Credentials, Nullable(Of Boolean), Int32(), Action(Of Response(Of Trophy())))
+- uid: GameJolt.Services.Trophies.Fetch*
+  name: Fetch
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_Fetch_
+  commentId: Overload:GameJolt.Services.Trophies.Fetch
+  isSpec: "True"
+  fullName: GameJolt.Services.Trophies.Fetch
+  nameWithType: Trophies.Fetch
+- uid: GameJolt.Services.Trophies.FetchAsync(GameJolt.Objects.Credentials,System.Nullable{System.Boolean},System.Int32[])
+  name: FetchAsync(Credentials, Nullable<Boolean>, Int32[])
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_FetchAsync_GameJolt_Objects_Credentials_System_Nullable_System_Boolean__System_Int32___
+  commentId: M:GameJolt.Services.Trophies.FetchAsync(GameJolt.Objects.Credentials,System.Nullable{System.Boolean},System.Int32[])
+  name.vb: FetchAsync(Credentials, Nullable(Of Boolean), Int32())
+  fullName: GameJolt.Services.Trophies.FetchAsync(GameJolt.Objects.Credentials, System.Nullable<System.Boolean>, System.Int32[])
+  fullName.vb: GameJolt.Services.Trophies.FetchAsync(GameJolt.Objects.Credentials, System.Nullable(Of System.Boolean), System.Int32())
+  nameWithType: Trophies.FetchAsync(Credentials, Nullable<Boolean>, Int32[])
+  nameWithType.vb: Trophies.FetchAsync(Credentials, Nullable(Of Boolean), Int32())
+- uid: GameJolt.Services.Trophies.FetchAsync*
+  name: FetchAsync
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_FetchAsync_
+  commentId: Overload:GameJolt.Services.Trophies.FetchAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Trophies.FetchAsync
+  nameWithType: Trophies.FetchAsync
+- uid: GameJolt.Services.Trophies.RemoveAchieved(GameJolt.Objects.Credentials,System.Int32,System.Action{GameJolt.Response})
+  name: RemoveAchieved(Credentials, Int32, Action<Response>)
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_RemoveAchieved_GameJolt_Objects_Credentials_System_Int32_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Trophies.RemoveAchieved(GameJolt.Objects.Credentials,System.Int32,System.Action{GameJolt.Response})
+  name.vb: RemoveAchieved(Credentials, Int32, Action(Of Response))
+  fullName: GameJolt.Services.Trophies.RemoveAchieved(GameJolt.Objects.Credentials, System.Int32, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Trophies.RemoveAchieved(GameJolt.Objects.Credentials, System.Int32, System.Action(Of GameJolt.Response))
+  nameWithType: Trophies.RemoveAchieved(Credentials, Int32, Action<Response>)
+  nameWithType.vb: Trophies.RemoveAchieved(Credentials, Int32, Action(Of Response))
+- uid: GameJolt.Services.Trophies.RemoveAchieved*
+  name: RemoveAchieved
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_RemoveAchieved_
+  commentId: Overload:GameJolt.Services.Trophies.RemoveAchieved
+  isSpec: "True"
+  fullName: GameJolt.Services.Trophies.RemoveAchieved
+  nameWithType: Trophies.RemoveAchieved
+- uid: GameJolt.Services.Trophies.RemoveAchievedAsync(GameJolt.Objects.Credentials,System.Int32)
+  name: RemoveAchievedAsync(Credentials, Int32)
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_RemoveAchievedAsync_GameJolt_Objects_Credentials_System_Int32_
+  commentId: M:GameJolt.Services.Trophies.RemoveAchievedAsync(GameJolt.Objects.Credentials,System.Int32)
+  fullName: GameJolt.Services.Trophies.RemoveAchievedAsync(GameJolt.Objects.Credentials, System.Int32)
+  nameWithType: Trophies.RemoveAchievedAsync(Credentials, Int32)
+- uid: GameJolt.Services.Trophies.RemoveAchievedAsync*
+  name: RemoveAchievedAsync
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_RemoveAchievedAsync_
+  commentId: Overload:GameJolt.Services.Trophies.RemoveAchievedAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Trophies.RemoveAchievedAsync
+  nameWithType: Trophies.RemoveAchievedAsync
+- uid: GameJolt.Services.Trophies.SetAchieved(GameJolt.Objects.Credentials,System.Int32,System.Action{GameJolt.Response})
+  name: SetAchieved(Credentials, Int32, Action<Response>)
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_SetAchieved_GameJolt_Objects_Credentials_System_Int32_System_Action_GameJolt_Response__
+  commentId: M:GameJolt.Services.Trophies.SetAchieved(GameJolt.Objects.Credentials,System.Int32,System.Action{GameJolt.Response})
+  name.vb: SetAchieved(Credentials, Int32, Action(Of Response))
+  fullName: GameJolt.Services.Trophies.SetAchieved(GameJolt.Objects.Credentials, System.Int32, System.Action<GameJolt.Response>)
+  fullName.vb: GameJolt.Services.Trophies.SetAchieved(GameJolt.Objects.Credentials, System.Int32, System.Action(Of GameJolt.Response))
+  nameWithType: Trophies.SetAchieved(Credentials, Int32, Action<Response>)
+  nameWithType.vb: Trophies.SetAchieved(Credentials, Int32, Action(Of Response))
+- uid: GameJolt.Services.Trophies.SetAchieved*
+  name: SetAchieved
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_SetAchieved_
+  commentId: Overload:GameJolt.Services.Trophies.SetAchieved
+  isSpec: "True"
+  fullName: GameJolt.Services.Trophies.SetAchieved
+  nameWithType: Trophies.SetAchieved
+- uid: GameJolt.Services.Trophies.SetAchievedAsync(GameJolt.Objects.Credentials,System.Int32)
+  name: SetAchievedAsync(Credentials, Int32)
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_SetAchievedAsync_GameJolt_Objects_Credentials_System_Int32_
+  commentId: M:GameJolt.Services.Trophies.SetAchievedAsync(GameJolt.Objects.Credentials,System.Int32)
+  fullName: GameJolt.Services.Trophies.SetAchievedAsync(GameJolt.Objects.Credentials, System.Int32)
+  nameWithType: Trophies.SetAchievedAsync(Credentials, Int32)
+- uid: GameJolt.Services.Trophies.SetAchievedAsync*
+  name: SetAchievedAsync
+  href: api/GameJolt.Services.Trophies.html#GameJolt_Services_Trophies_SetAchievedAsync_
+  commentId: Overload:GameJolt.Services.Trophies.SetAchievedAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Trophies.SetAchievedAsync
+  nameWithType: Trophies.SetAchievedAsync
+- uid: GameJolt.Services.Users
+  name: Users
+  href: api/GameJolt.Services.Users.html
+  commentId: T:GameJolt.Services.Users
+  fullName: GameJolt.Services.Users
+  nameWithType: Users
+- uid: GameJolt.Services.Users.Auth(System.String,System.String,System.Action{GameJolt.Response{GameJolt.Objects.Credentials}})
+  name: Auth(String, String, Action<Response<Credentials>>)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_Auth_System_String_System_String_System_Action_GameJolt_Response_GameJolt_Objects_Credentials___
+  commentId: M:GameJolt.Services.Users.Auth(System.String,System.String,System.Action{GameJolt.Response{GameJolt.Objects.Credentials}})
+  name.vb: Auth(String, String, Action(Of Response(Of Credentials)))
+  fullName: GameJolt.Services.Users.Auth(System.String, System.String, System.Action<GameJolt.Response<GameJolt.Objects.Credentials>>)
+  fullName.vb: GameJolt.Services.Users.Auth(System.String, System.String, System.Action(Of GameJolt.Response(Of GameJolt.Objects.Credentials)))
+  nameWithType: Users.Auth(String, String, Action<Response<Credentials>>)
+  nameWithType.vb: Users.Auth(String, String, Action(Of Response(Of Credentials)))
+- uid: GameJolt.Services.Users.Auth*
+  name: Auth
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_Auth_
+  commentId: Overload:GameJolt.Services.Users.Auth
+  isSpec: "True"
+  fullName: GameJolt.Services.Users.Auth
+  nameWithType: Users.Auth
+- uid: GameJolt.Services.Users.AuthAsync(System.String,System.String)
+  name: AuthAsync(String, String)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_AuthAsync_System_String_System_String_
+  commentId: M:GameJolt.Services.Users.AuthAsync(System.String,System.String)
+  fullName: GameJolt.Services.Users.AuthAsync(System.String, System.String)
+  nameWithType: Users.AuthAsync(String, String)
+- uid: GameJolt.Services.Users.AuthAsync*
+  name: AuthAsync
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_AuthAsync_
+  commentId: Overload:GameJolt.Services.Users.AuthAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Users.AuthAsync
+  nameWithType: Users.AuthAsync
+- uid: GameJolt.Services.Users.Fetch(System.Int32,System.Action{GameJolt.Response{GameJolt.Objects.User}})
+  name: Fetch(Int32, Action<Response<User>>)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_Fetch_System_Int32_System_Action_GameJolt_Response_GameJolt_Objects_User___
+  commentId: M:GameJolt.Services.Users.Fetch(System.Int32,System.Action{GameJolt.Response{GameJolt.Objects.User}})
+  name.vb: Fetch(Int32, Action(Of Response(Of User)))
+  fullName: GameJolt.Services.Users.Fetch(System.Int32, System.Action<GameJolt.Response<GameJolt.Objects.User>>)
+  fullName.vb: GameJolt.Services.Users.Fetch(System.Int32, System.Action(Of GameJolt.Response(Of GameJolt.Objects.User)))
+  nameWithType: Users.Fetch(Int32, Action<Response<User>>)
+  nameWithType.vb: Users.Fetch(Int32, Action(Of Response(Of User)))
+- uid: GameJolt.Services.Users.Fetch(System.Int32[],System.Action{GameJolt.Response{GameJolt.Objects.User[]}})
+  name: Fetch(Int32[], Action<Response<User[]>>)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_Fetch_System_Int32___System_Action_GameJolt_Response_GameJolt_Objects_User_____
+  commentId: M:GameJolt.Services.Users.Fetch(System.Int32[],System.Action{GameJolt.Response{GameJolt.Objects.User[]}})
+  name.vb: Fetch(Int32(), Action(Of Response(Of User())))
+  fullName: GameJolt.Services.Users.Fetch(System.Int32[], System.Action<GameJolt.Response<GameJolt.Objects.User[]>>)
+  fullName.vb: GameJolt.Services.Users.Fetch(System.Int32(), System.Action(Of GameJolt.Response(Of GameJolt.Objects.User())))
+  nameWithType: Users.Fetch(Int32[], Action<Response<User[]>>)
+  nameWithType.vb: Users.Fetch(Int32(), Action(Of Response(Of User())))
+- uid: GameJolt.Services.Users.Fetch(System.String,System.Action{GameJolt.Response{GameJolt.Objects.User}})
+  name: Fetch(String, Action<Response<User>>)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_Fetch_System_String_System_Action_GameJolt_Response_GameJolt_Objects_User___
+  commentId: M:GameJolt.Services.Users.Fetch(System.String,System.Action{GameJolt.Response{GameJolt.Objects.User}})
+  name.vb: Fetch(String, Action(Of Response(Of User)))
+  fullName: GameJolt.Services.Users.Fetch(System.String, System.Action<GameJolt.Response<GameJolt.Objects.User>>)
+  fullName.vb: GameJolt.Services.Users.Fetch(System.String, System.Action(Of GameJolt.Response(Of GameJolt.Objects.User)))
+  nameWithType: Users.Fetch(String, Action<Response<User>>)
+  nameWithType.vb: Users.Fetch(String, Action(Of Response(Of User)))
+- uid: GameJolt.Services.Users.Fetch*
+  name: Fetch
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_Fetch_
+  commentId: Overload:GameJolt.Services.Users.Fetch
+  isSpec: "True"
+  fullName: GameJolt.Services.Users.Fetch
+  nameWithType: Users.Fetch
+- uid: GameJolt.Services.Users.FetchAsync(System.Int32)
+  name: FetchAsync(Int32)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_FetchAsync_System_Int32_
+  commentId: M:GameJolt.Services.Users.FetchAsync(System.Int32)
+  fullName: GameJolt.Services.Users.FetchAsync(System.Int32)
+  nameWithType: Users.FetchAsync(Int32)
+- uid: GameJolt.Services.Users.FetchAsync(System.Int32[])
+  name: FetchAsync(Int32[])
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_FetchAsync_System_Int32___
+  commentId: M:GameJolt.Services.Users.FetchAsync(System.Int32[])
+  name.vb: FetchAsync(Int32())
+  fullName: GameJolt.Services.Users.FetchAsync(System.Int32[])
+  fullName.vb: GameJolt.Services.Users.FetchAsync(System.Int32())
+  nameWithType: Users.FetchAsync(Int32[])
+  nameWithType.vb: Users.FetchAsync(Int32())
+- uid: GameJolt.Services.Users.FetchAsync(System.String)
+  name: FetchAsync(String)
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_FetchAsync_System_String_
+  commentId: M:GameJolt.Services.Users.FetchAsync(System.String)
+  fullName: GameJolt.Services.Users.FetchAsync(System.String)
+  nameWithType: Users.FetchAsync(String)
+- uid: GameJolt.Services.Users.FetchAsync*
+  name: FetchAsync
+  href: api/GameJolt.Services.Users.html#GameJolt_Services_Users_FetchAsync_
+  commentId: Overload:GameJolt.Services.Users.FetchAsync
+  isSpec: "True"
+  fullName: GameJolt.Services.Users.FetchAsync
+  nameWithType: Users.FetchAsync

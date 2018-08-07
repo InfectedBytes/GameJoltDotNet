@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GameJoltDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GameJoltDotNet ">
+    <meta name="generator" content="docfx 2.37.2.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><img src="images/gamejolt.png" alt="GameJolt"></p>
+<h1 id="gamejoltdotnet"><code>GameJoltDotNet</code></h1>
+<p>GameJoltDotNet is a GameJolt <a href="https://gamejolt.com/game-api/doc">Game API</a> client for the <code>.NET</code> Framework
+and can therefore be used by every <code>.NET</code> language, like <code>C#</code>, <code>VB.NET</code> or <code>F#</code>.</p>
+<p>For best portability this library is based on .NET Standard 1.3 and can therefore be used on a wide variety of different platforms.
+The following platforms are supported:</p>
+<table>
+<thead>
+<tr>
+<th>Framework</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.NET Standard</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>.NET Core</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>.NET Framework</td>
+<td>4.6</td>
+</tr>
+<tr>
+<td>Mono</td>
+<td>4.6</td>
+</tr>
+<tr>
+<td>Xamarin.iOS</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>Xamarin.Mac</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Xamarin.Android</td>
+<td>7.0</td>
+</tr>
+<tr>
+<td>Universal Windows Platform</td>
+<td>10.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gamejolt-api-overview">GameJolt API Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Datastore</td>
+<td>Manipulate items in a cloud-based data storage.</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Get the server's time.</td>
+</tr>
+<tr>
+<td>Scores</td>
+<td>Manipulate scores on score tables.</td>
+</tr>
+<tr>
+<td>Sessions</td>
+<td>Set up sessions for your game.</td>
+</tr>
+<tr>
+<td>Trophies</td>
+<td>Manage trophies for your game.</td>
+</tr>
+<tr>
+<td>Users</td>
+<td>Access user-based features.</td>
+</tr>
+<tr>
+<td>Friends</td>
+<td>List a user's friends.</td>
+</tr>
+</tbody>
+</table>
+<p>This library is heavily based on the async/await mechanism of C# and can therefore be used without blocking the main thread.
+Furthermore it provides a convenience facade API, which internally uses the async/await API, but provides a simple, callback based API as a front end.</p>
+<h2 id="example">Example</h2>
+<p>First of all you have to create a new api instance:</p>
+<pre><code class="lang-cs">var api = new GameJoltApi(gameId, privateKey);
+</code></pre>
+<p>Afterwards you can directly use the different GameJolt features.</p>
+<pre><code class="lang-cs">// by using async/await:
+var response = await api.Scores.FetchAsync();
+if(response.Success) {
+    // response.Data contains the list of scores
+}
+
+// or by using the callback mechanism:
+api.Scores.Fetch(callback: response =&gt; {
+    if(response.Success) {
+        // response.Data contains the list of scores
+    }
+});
+</code></pre>
+<p>Some APIs require an authenticated user, because they set or get data for a certain user. The authentication can be done like so:</p>
+<pre><code class="lang-cs">var auth = await api.Users.AuthAsync(userName, userToken);
+if(auth.Success) {
+    api.Trophies.SetAchieved(auth.Data, trophyId);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/docfx/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

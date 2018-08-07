@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scores
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scores
+   ">
+    <meta name="generator" content="docfx 2.37.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GameJolt.Services.Scores">
+  
+  
+  <h1 id="GameJolt_Services_Scores" data-uid="GameJolt.Services.Scores" class="text-break">Class Scores
+  </h1>
+  <div class="markdown level0 summary"><p>Game Jolt supports multiple online score tables, or scoreboards, per game.
+You are able to, for example, have a score table for each level in your game, or a table for different scoring metrics.
+Gamers will keep coming back to try to achieve the highest scores for your game.
+With multiple formatting and sorting options, the system is quite flexible.
+You are also able to include extra data with each score.
+If there is other data associated with the score such as time played, coins collected, etc., you
+should definitely include it.
+It will be helpful in cases where you believe a gamer has illegitimately achieved a high score.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="GameJolt.Services.Service.html">Service</a></div>
+    <div class="level2"><span class="xref">Scores</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="GameJolt.Services.Service.html#GameJolt_Services_Service_Api">Service.Api</a>
+    </div>
+    <div>
+      <a class="xref" href="GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap_System_Threading_Tasks_Task_GameJolt_Response__System_Action_GameJolt_Response__">Service.Wrap(Task&lt;Response&gt;, Action&lt;Response&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="GameJolt.Services.Service.html#GameJolt_Services_Service_Wrap__1_System_Threading_Tasks_Task_GameJolt_Response___0___System_Action_GameJolt_Response___0___">Service.Wrap&lt;T&gt;(Task&lt;Response&lt;T&gt;&gt;, Action&lt;Response&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GameJolt.Services.html">GameJolt.Services</a></h6>
+  <h6><strong>Assembly</strong>: GameJolt.dll</h6>
+  <h5 id="GameJolt_Services_Scores_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Scores : Service</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_Add_GameJolt_Objects_Credentials_System_Int32_System_String_System_String_System_Int32_System_Action_GameJolt_Response__.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.Add(GameJolt.Objects.Credentials%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Action%7BGameJolt.Response%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L168">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_Add_" data-uid="GameJolt.Services.Scores.Add*"></a>
+  <h4 id="GameJolt_Services_Scores_Add_GameJolt_Objects_Credentials_System_Int32_System_String_System_String_System_Int32_System_Action_GameJolt_Response__" data-uid="GameJolt.Services.Scores.Add(GameJolt.Objects.Credentials,System.Int32,System.String,System.String,System.Int32,System.Action{GameJolt.Response})">Add(Credentials, Int32, String, String, Int32, Action&lt;Response&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a score for a user or guest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(Credentials credentials, int value, string text, string extra = &quot;&quot;, int tableId = 0, Action&lt;Response&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>The user's credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>This is a numerical sorting value associated with the score.
+All sorting will be based on this number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>This is a string value associated with the score.
+This value will be shown to the user on GameJolt</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>If there's any extra data you would like to store as a string, you can use this variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The ID of the score table to submit to. If not set, the primary table is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_Add_System_String_System_Int32_System_String_System_String_System_Int32_System_Action_GameJolt_Response__.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.Add(System.String%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Action%7BGameJolt.Response%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L186">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_Add_" data-uid="GameJolt.Services.Scores.Add*"></a>
+  <h4 id="GameJolt_Services_Scores_Add_System_String_System_Int32_System_String_System_String_System_Int32_System_Action_GameJolt_Response__" data-uid="GameJolt.Services.Scores.Add(System.String,System.Int32,System.String,System.String,System.Int32,System.Action{GameJolt.Response})">Add(String, Int32, String, String, Int32, Action&lt;Response&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a score for a user or guest. GameJolt let's you define if guest scores are allowed or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(string guestName, int value, string text, string extra = &quot;&quot;, int tableId = 0, Action&lt;Response&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guestName</span></td>
+        <td><p>The guest's name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>This is a numerical sorting value associated with the score.
+All sorting will be based on this number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>This is a string value associated with the score.
+This value will be shown to the user on GameJolt</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>If there's any extra data you would like to store as a string, you can use this variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The ID of the score table to submit to. If not set, the primary table is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_AddAsync_GameJolt_Objects_Credentials_System_Int32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.AddAsync(GameJolt.Objects.Credentials%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L74">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_AddAsync_" data-uid="GameJolt.Services.Scores.AddAsync*"></a>
+  <h4 id="GameJolt_Services_Scores_AddAsync_GameJolt_Objects_Credentials_System_Int32_System_String_System_String_System_Int32_" data-uid="GameJolt.Services.Scores.AddAsync(GameJolt.Objects.Credentials,System.Int32,System.String,System.String,System.Int32)">AddAsync(Credentials, Int32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a score for a user or guest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; AddAsync(Credentials credentials, int value, string text, string extra = &quot;&quot;, int tableId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>The user's credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>This is a numerical sorting value associated with the score.
+All sorting will be based on this number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>This is a string value associated with the score.
+This value will be shown to the user on GameJolt</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>If there's any extra data you would like to store as a string, you can use this variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The ID of the score table to submit to. If not set, the primary table is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_AddAsync_System_String_System_Int32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.AddAsync(System.String%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L100">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_AddAsync_" data-uid="GameJolt.Services.Scores.AddAsync*"></a>
+  <h4 id="GameJolt_Services_Scores_AddAsync_System_String_System_Int32_System_String_System_String_System_Int32_" data-uid="GameJolt.Services.Scores.AddAsync(System.String,System.Int32,System.String,System.String,System.Int32)">AddAsync(String, Int32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a score for a user or guest. GameJolt let's you define if guest scores are allowed or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&gt; AddAsync(string guestName, int value, string text, string extra = &quot;&quot;, int tableId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guestName</span></td>
+        <td><p>The guest's name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>This is a numerical sorting value associated with the score.
+All sorting will be based on this number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>This is a string value associated with the score.
+This value will be shown to the user on GameJolt</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">extra</span></td>
+        <td><p>If there's any extra data you would like to store as a string, you can use this variable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The ID of the score table to submit to. If not set, the primary table is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_Fetch_GameJolt_Objects_Credentials_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Action_GameJolt_Response_GameJolt_Objects_Score_____.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Action%7BGameJolt.Response%7BGameJolt.Objects.Score%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L139">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_Fetch_" data-uid="GameJolt.Services.Scores.Fetch*"></a>
+  <h4 id="GameJolt_Services_Scores_Fetch_GameJolt_Objects_Credentials_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Action_GameJolt_Response_GameJolt_Objects_Score_____" data-uid="GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Action{GameJolt.Response{GameJolt.Objects.Score[]}})">Fetch(Credentials, Int32, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Action&lt;Response&lt;Score[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of scores either for a user or globally for a game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fetch(Credentials credentials = null, int tableId = 0, int limit = 10, int? betterThan = default(int? ), int? worseThan = default(int? ), Action&lt;Response&lt;Score[]&gt;&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If provided, only the scores of this user are returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The id of the score table. If left empty, the primary table is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The number of scores you'd like to return.
+The maximum amount of scores you can retrieve is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">betterThan</span></td>
+        <td><p>If provided, only scores better than this value are returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">worseThan</span></td>
+        <td><p>If provided, only scores worse than this value are returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<a class="xref" href="GameJolt.Objects.Score.html">Score</a>[]&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_FetchAsync_GameJolt_Objects_Credentials_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L33">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_FetchAsync_" data-uid="GameJolt.Services.Scores.FetchAsync*"></a>
+  <h4 id="GameJolt_Services_Scores_FetchAsync_GameJolt_Objects_Credentials_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})">FetchAsync(Credentials, Int32, Int32, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of scores either for a user or globally for a game.
+The <code data-dev-comment-type="paramref" class="paramref">betterThan</code> and <code data-dev-comment-type="paramref" class="paramref">worseThan</code> parameters are mutually exclusive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;Score[]&gt;&gt; FetchAsync(Credentials credentials = null, int tableId = 0, int limit = 10, int? betterThan = default(int? ), int? worseThan = default(int? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GameJolt.Objects.Credentials.html">Credentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>If provided, only the scores of this user are returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The id of the score table. If left empty, the primary table is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The number of scores you'd like to return.
+The maximum amount of scores you can retrieve is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">betterThan</span></td>
+        <td><p>If provided, only scores better than this value are returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">worseThan</span></td>
+        <td><p>If provided, only scores worse than this value are returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<a class="xref" href="GameJolt.Objects.Score.html">Score</a>[]&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_FetchTables_System_Action_GameJolt_Response_GameJolt_Objects_Table_____.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.FetchTables(System.Action%7BGameJolt.Response%7BGameJolt.Objects.Table%5B%5D%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L150">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_FetchTables_" data-uid="GameJolt.Services.Scores.FetchTables*"></a>
+  <h4 id="GameJolt_Services_Scores_FetchTables_System_Action_GameJolt_Response_GameJolt_Objects_Table_____" data-uid="GameJolt.Services.Scores.FetchTables(System.Action{GameJolt.Response{GameJolt.Objects.Table[]}})">FetchTables(Action&lt;Response&lt;Table[]&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of high score tables for a game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FetchTables(Action&lt;Response&lt;Table[]&gt;&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<a class="xref" href="GameJolt.Objects.Table.html">Table</a>[]&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_FetchTablesAsync.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.FetchTablesAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L56">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_FetchTablesAsync_" data-uid="GameJolt.Services.Scores.FetchTablesAsync*"></a>
+  <h4 id="GameJolt_Services_Scores_FetchTablesAsync" data-uid="GameJolt.Services.Scores.FetchTablesAsync">FetchTablesAsync()</h4>
+  <div class="markdown level1 summary"><p>Returns a list of high score tables for a game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;Table[]&gt;&gt; FetchTablesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<a class="xref" href="GameJolt.Objects.Table.html">Table</a>[]&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_GetRank_System_Int32_System_Int32_System_Action_GameJolt_Response_System_Int32___.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.GetRank(System.Int32%2CSystem.Int32%2CSystem.Action%7BGameJolt.Response%7BSystem.Int32%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L199">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_GetRank_" data-uid="GameJolt.Services.Scores.GetRank*"></a>
+  <h4 id="GameJolt_Services_Scores_GetRank_System_Int32_System_Int32_System_Action_GameJolt_Response_System_Int32___" data-uid="GameJolt.Services.Scores.GetRank(System.Int32,System.Int32,System.Action{GameJolt.Response{System.Int32}})">GetRank(Int32, Int32, Action&lt;Response&lt;Int32&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the rank of a particular score on a score table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRank(int value, int tableId = 0, Action&lt;Response&lt;int&gt;&gt; callback = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>This is a numerical sorting value that is represented by a rank on the score table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The ID of the score table to submit to. If not set, the primary table is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>Action that is called on completion or error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores_GetRankAsync_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores.GetRankAsync(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L120">View Source</a>
+  </span>
+  <a id="GameJolt_Services_Scores_GetRankAsync_" data-uid="GameJolt.Services.Scores.GetRankAsync*"></a>
+  <h4 id="GameJolt_Services_Scores_GetRankAsync_System_Int32_System_Int32_" data-uid="GameJolt.Services.Scores.GetRankAsync(System.Int32,System.Int32)">GetRankAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the rank of a particular score on a score table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;int&gt;&gt; GetRankAsync(int value, int tableId = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>This is a numerical sorting value that is represented by a rank on the score table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">tableId</span></td>
+        <td><p>The ID of the score table to submit to. If not set, the primary table is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="GameJolt.Response-1.html">Response</a>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfectedBytes/GameJoltDotNet/new/master/apiSpec/new?filename=GameJolt_Services_Scores.md&amp;value=---%0Auid%3A%20GameJolt.Services.Scores%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfectedBytes/GameJoltDotNet/blob/master/GameJolt/Services/Scores.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
