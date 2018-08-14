@@ -1,4 +1,4 @@
-[Documentation](https://infectedbytes.github.io/GameJoltDotNet/) | [GameJolt Page](https://gamejolt.com/games/gamejoltdotnet/358157) | [NuGet Package](https://www.nuget.org/packages/GameJoltDotNet/) | [License](https://github.com/InfectedBytes/GameJoltDotNet/blob/master/LICENSE)
+[Documentation](https://infectedbytes.github.io/GameJoltDotNet/) | [GameJolt Page](https://gamejolt.com/games/gamejoltdotnet/358157) | [NuGet Package](https://www.nuget.org/packages/GameJoltDotNet/) | [License](https://github.com/InfectedBytes/GameJoltDotNet/blob/master/LICENSE) | [Examples](https://github.com/InfectedBytes/GameJoltDotNetExamples)
 
 # GameJoltDotNet
 GameJolt [Game API](https://gamejolt.com/game-api/doc) client for the .NET Framework, written entirely in C#.
@@ -16,6 +16,8 @@ Xamarin.iOS | 10.0
 Xamarin.Mac | 3.0
 Xamarin.Android | 7.0
 Universal Windows Platform | 10.0
+
+Furthermore an additional package targeting the `.NET` Framework 4.5 is provided.
 
 It can even be used with Unity, by changing Unity's [runtime scripting](https://docs.unity3d.com/Manual/ScriptingRuntimeUpgrade.html) environment.
 
@@ -88,4 +90,7 @@ This settings file can be found in the unit tests binary folder, by default this
 So if you want to run the unit tests, you should create seaparate scoreboards just for testing.
 
 ## Documentation
-More documentation and examples will follow, stay tuned!
+The documentation of this project can be found [here](https://infectedbytes.github.io/GameJoltDotNet/).
+It contains the API reference documentation as well as some articles explaining the basic usage of it.
+
+For example projects please visit the [GameJoltDotNetExamples](https://github.com/InfectedBytes/GameJoltDotNetExamples) repository. 
