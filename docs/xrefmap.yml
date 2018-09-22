@@ -1149,6 +1149,15 @@ references:
   fullName.vb: GameJolt.Services.Scores.Fetch(GameJolt.Objects.Credentials, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Action(Of GameJolt.Response(Of GameJolt.Objects.Score())))
   nameWithType: Scores.Fetch(Credentials, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Action<Response<Score[]>>)
   nameWithType.vb: Scores.Fetch(Credentials, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Action(Of Response(Of Score())))
+- uid: GameJolt.Services.Scores.Fetch(System.String,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Action{GameJolt.Response{GameJolt.Objects.Score[]}})
+  name: Fetch(String, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Action<Response<Score[]>>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Fetch_System_String_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Action_GameJolt_Response_GameJolt_Objects_Score_____
+  commentId: M:GameJolt.Services.Scores.Fetch(System.String,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Action{GameJolt.Response{GameJolt.Objects.Score[]}})
+  name.vb: Fetch(String, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Action(Of Response(Of Score())))
+  fullName: GameJolt.Services.Scores.Fetch(System.String, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Action<GameJolt.Response<GameJolt.Objects.Score[]>>)
+  fullName.vb: GameJolt.Services.Scores.Fetch(System.String, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Action(Of GameJolt.Response(Of GameJolt.Objects.Score())))
+  nameWithType: Scores.Fetch(String, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Action<Response<Score[]>>)
+  nameWithType.vb: Scores.Fetch(String, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Action(Of Response(Of Score())))
 - uid: GameJolt.Services.Scores.Fetch*
   name: Fetch
   href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_Fetch_
@@ -1165,6 +1174,15 @@ references:
   fullName.vb: GameJolt.Services.Scores.FetchAsync(GameJolt.Objects.Credentials, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
   nameWithType: Scores.FetchAsync(Credentials, Int32, Int32, Nullable<Int32>, Nullable<Int32>)
   nameWithType.vb: Scores.FetchAsync(Credentials, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
+- uid: GameJolt.Services.Scores.FetchAsync(System.String,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: FetchAsync(String, Int32, Int32, Nullable<Int32>, Nullable<Int32>)
+  href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchAsync_System_String_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:GameJolt.Services.Scores.FetchAsync(System.String,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: FetchAsync(String, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
+  fullName: GameJolt.Services.Scores.FetchAsync(System.String, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: GameJolt.Services.Scores.FetchAsync(System.String, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: Scores.FetchAsync(String, Int32, Int32, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: Scores.FetchAsync(String, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
 - uid: GameJolt.Services.Scores.FetchAsync*
   name: FetchAsync
   href: api/GameJolt.Services.Scores.html#GameJolt_Services_Scores_FetchAsync_
