@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
     <PackageId>GameJoltDotNet</PackageId>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <Authors>Henrik Heine</Authors>
     <Company>InfectedBytes</Company>
     <Product>GameJoltDotNet</Product>

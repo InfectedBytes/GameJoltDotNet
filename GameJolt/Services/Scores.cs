@@ -30,15 +30,40 @@ namespace GameJolt.Services {
 		/// The maximum amount of scores you can retrieve is 100.</param>
 		/// <param name="betterThan">If provided, only scores better than this value are returned.</param>
 		/// <param name="worseThan">If provided, only scores worse than this value are returned.</param>
-		public async Task<Response<Score[]>> FetchAsync(Credentials credentials = null, int tableId = 0, int limit = 10,
+		public Task<Response<Score[]>> FetchAsync(Credentials credentials = null, int tableId = 0, int limit = 10,
 			int? betterThan = null, int? worseThan = null) {
+			return FetchAsync(credentials, null, tableId, limit, betterThan, worseThan);
+		}
+
+		/// <summary>
+		/// Returns a list of scores either for a user or globally for a game.
+		/// The <paramref name="betterThan"/> and <paramref name="worseThan"/> parameters are mutually exclusive.
+		/// </summary>
+		/// <param name="guestName">Only the scores of this guest are returned.</param>
+		/// <param name="tableId">The id of the score table. If left empty, the primary table is used.</param>
+		/// <param name="limit">The number of scores you'd like to return. 
+		/// The maximum amount of scores you can retrieve is 100.</param>
+		/// <param name="betterThan">If provided, only scores better than this value are returned.</param>
+		/// <param name="worseThan">If provided, only scores worse than this value are returned.</param>
+		public Task<Response<Score[]>> FetchAsync(string guestName, int tableId = 0, int limit = 10,
+			int? betterThan = null, int? worseThan = null) {
+			return FetchAsync(null, guestName, tableId, limit, betterThan, worseThan);
+		}
+
+		private async Task<Response<Score[]>> FetchAsync(Credentials credentials, string guestName, int tableId, int limit,
+			int? betterThan, int? worseThan) {
+			if(credentials != null && guestName != null)
+				throw new ArgumentException(
+					$"The {nameof(credentials)} and {nameof(guestName)} parameters are both set, but at most one of them is allowed");
 			if(betterThan != null && worseThan != null)
 				throw new ArgumentException(
 					$"The {nameof(betterThan)} and {nameof(worseThan)} parameters are both set, but at most one of them is allowed");
-			var parameters = new Dictionary<string, string> {{"limit", limit.ToString()}};
+			var parameters = new Dictionary<string, string> { { "limit", limit.ToString() } };
 			if(credentials != null) {
 				parameters.Add("username", credentials.Name);
 				parameters.Add("user_token", credentials.Token);
+			} else if(guestName != null) {
+				parameters.Add("guest", guestName);
 			}
 			if(tableId != 0) parameters.Add("table_id", tableId.ToString());
 			if(betterThan != null) parameters.Add("better_than", betterThan.Value.ToString());
@@ -140,6 +165,22 @@ namespace GameJolt.Services {
 		public void Fetch(Credentials credentials = null, int tableId = 0, int limit = 10,
 			int? betterThan = null, int? worseThan = null, Action<Response<Score[]>> callback = null) {
 			Wrap(FetchAsync(credentials, tableId, limit, betterThan, worseThan), callback);
+		}
+
+		/// <summary>
+		/// Returns a list of scores either for a guest.
+		/// </summary>
+		/// <param name="guest">Only the scores of this guest are returned.</param>
+		/// <param name="tableId">The id of the score table. If left empty, the primary table is used.</param>
+		/// <param name="limit">The number of scores you'd like to return. 
+		/// The maximum amount of scores you can retrieve is 100.</param>
+		/// <param name="betterThan">If provided, only scores better than this value are returned.</param>
+		/// <param name="worseThan">If provided, only scores worse than this value are returned.</param>
+		/// <param name="callback">Action that is called on completion or error.</param>
+		[ExcludeFromCodeCoverage]
+		public void Fetch(string guest, int tableId = 0, int limit = 10,
+			int? betterThan = null, int? worseThan = null, Action<Response<Score[]>> callback = null) {
+			Wrap(FetchAsync(guest, tableId, limit, betterThan, worseThan), callback);
 		}
 
 		/// <summary>

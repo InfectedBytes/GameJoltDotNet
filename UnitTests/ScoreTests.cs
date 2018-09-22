@@ -44,6 +44,17 @@ namespace GameJolt.UnitTests {
 			Assert.That(results.Success);
 			Assert.That(results.Data.Length <= limit);
 		}
+
+		[Test]
+		public async Task FetchGuest() {
+			const string guest = "TestGuest";
+			var scores = await GetScores(UniqueTable);
+			var score = scores.First().Value + 1;
+			Assert.That((await Api.Scores.AddAsync(guest, score, $"{score} Points", tableId: UniqueTable)).Success);
+			var guestScores = await Api.Scores.FetchAsync(guest, UniqueTable);
+			Assert.That(guestScores.Data.Length == 1);
+			Assert.That(guestScores.Data[0].Value == score);
+		}
 		#endregion
 
 		#region Better/Worse than
